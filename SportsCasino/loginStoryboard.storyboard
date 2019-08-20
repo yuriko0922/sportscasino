@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2N-Rt-aGs">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Amana-Regular.otf">
+            <string>Amana-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="SYu-hC-4un">
+            <objects>
+                <viewController id="M9I-vh-VOa" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ysP-Ns-YzG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス又は電話番号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRm-tr-8XL">
+                                <rect key="frame" x="35" y="256" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="4Yh-QC-Fhc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cRM-aA-1Yt">
+                                <rect key="frame" x="35" y="326" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="DRX-Ko-4tO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VF9-Cr-BHd">
+                                <rect key="frame" x="126" y="371" width="68" height="33"/>
+                                <fontDescription key="fontDescription" name="Amana-Regular" family="Amana" pointSize="17"/>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hD-Eu-gez">
+                                <rect key="frame" x="78" y="482" width="164" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="新規登録はこちら">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SportsCasinoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="CPc-mW-uRx">
+                                <rect key="frame" x="60" y="10" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="H5a-d5-oWF"/>
+                                    <constraint firstAttribute="width" secondItem="CPc-mW-uRx" secondAttribute="height" multiplier="1:1" id="MLE-KH-lsD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.80613227739726023" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iRm-tr-8XL" firstAttribute="centerX" secondItem="ysP-Ns-YzG" secondAttribute="centerX" id="Agq-3C-y5P"/>
+                            <constraint firstItem="VF9-Cr-BHd" firstAttribute="top" secondItem="cRM-aA-1Yt" secondAttribute="bottom" constant="15" id="Dno-mh-jOq"/>
+                            <constraint firstItem="CPc-mW-uRx" firstAttribute="centerX" secondItem="ysP-Ns-YzG" secondAttribute="centerX" id="J80-vD-Xdf"/>
+                            <constraint firstItem="cRM-aA-1Yt" firstAttribute="centerX" secondItem="ysP-Ns-YzG" secondAttribute="centerX" id="KDd-1N-YBS"/>
+                            <constraint firstItem="0hD-Eu-gez" firstAttribute="centerX" secondItem="ysP-Ns-YzG" secondAttribute="centerX" id="Lvf-qg-fuU"/>
+                            <constraint firstItem="Ucw-Sh-Z61" firstAttribute="bottom" secondItem="0hD-Eu-gez" secondAttribute="bottom" constant="50" id="dKL-Ny-iIv"/>
+                            <constraint firstItem="iRm-tr-8XL" firstAttribute="top" secondItem="CPc-mW-uRx" secondAttribute="bottom" constant="46" id="gnL-Yc-kSV"/>
+                            <constraint firstItem="cRM-aA-1Yt" firstAttribute="top" secondItem="iRm-tr-8XL" secondAttribute="bottom" constant="40" id="khj-lQ-U3X"/>
+                            <constraint firstItem="CPc-mW-uRx" firstAttribute="top" secondItem="ysP-Ns-YzG" secondAttribute="top" constant="10" id="otA-HB-7NB"/>
+                            <constraint firstItem="VF9-Cr-BHd" firstAttribute="centerX" secondItem="ysP-Ns-YzG" secondAttribute="centerX" id="qYC-rB-O19"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ucw-Sh-Z61"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Abi-KA-sgi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ebh-E0-P5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751.875" y="7.394366197183099"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jN7-8e-G8R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N2N-Rt-aGs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="egt-zS-dxq">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M9I-vh-VOa" kind="relationship" relationship="rootViewController" id="gdp-Nk-S8F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVk-gV-HCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-245.625" y="7.394366197183099"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SportsCasinoロゴ" width="600" height="600"/>
+    </resources>
+</document>
