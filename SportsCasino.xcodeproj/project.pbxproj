@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EABAA7C9F408F073760E69B /* Pods_SportsCasino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDAB180AD9306DBA12C3C622 /* Pods_SportsCasino.framework */; };
 		BE08A250230BE77C0087DB6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08A24F230BE77C0087DB6A /* AppDelegate.swift */; };
 		BE08A252230BE77C0087DB6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08A251230BE77C0087DB6A /* ViewController.swift */; };
 		BE08A255230BE77C0087DB6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE08A253230BE77C0087DB6A /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD29E24CA7932BBF1E5C80F0 /* Pods-SportsCasino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsCasino.debug.xcconfig"; path = "Target Support Files/Pods-SportsCasino/Pods-SportsCasino.debug.xcconfig"; sourceTree = "<group>"; };
 		BE08A24C230BE77C0087DB6A /* SportsCasino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsCasino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE08A24F230BE77C0087DB6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE08A251230BE77C0087DB6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		BE08A261230BE8B60087DB6A /* loginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = loginStoryboard.storyboard; sourceTree = "<group>"; };
 		BE08A263230C06B20087DB6A /* K Gothic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "K Gothic"; sourceTree = "<group>"; };
 		BE08A265230C07A30087DB6A /* Amana */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Amana; sourceTree = "<group>"; };
+		EDAB180AD9306DBA12C3C622 /* Pods_SportsCasino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsCasino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC1D8E5B6B1C44F8068F47F /* Pods-SportsCasino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsCasino.release.xcconfig"; path = "Target Support Files/Pods-SportsCasino/Pods-SportsCasino.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EABAA7C9F408F073760E69B /* Pods_SportsCasino.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0489E5B5BA3A3790B3CF5B03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDAB180AD9306DBA12C3C622 /* Pods_SportsCasino.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72765D057C5ECDEC7074B30C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD29E24CA7932BBF1E5C80F0 /* Pods-SportsCasino.debug.xcconfig */,
+				FAC1D8E5B6B1C44F8068F47F /* Pods-SportsCasino.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BE08A243230BE77C0087DB6A = {
 			isa = PBXGroup;
 			children = (
 				BE08A24E230BE77C0087DB6A /* SportsCasino */,
 				BE08A24D230BE77C0087DB6A /* Products */,
+				72765D057C5ECDEC7074B30C /* Pods */,
+				0489E5B5BA3A3790B3CF5B03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE08A25E230BE77F0087DB6A /* Build configuration list for PBXNativeTarget "SportsCasino" */;
 			buildPhases = (
+				B9BBCCC447876942D7EEDDDC /* [CP] Check Pods Manifest.lock */,
 				BE08A248230BE77C0087DB6A /* Sources */,
 				BE08A249230BE77C0087DB6A /* Frameworks */,
 				BE08A24A230BE77C0087DB6A /* Resources */,
+				CFED74B891332F74731ABD00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9BBCCC447876942D7EEDDDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportsCasino-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFED74B891332F74731ABD00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportsCasino/Pods-SportsCasino-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportsCasino/Pods-SportsCasino-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SportsCasino/Pods-SportsCasino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE08A248230BE77C0087DB6A /* Sources */ = {
@@ -292,6 +360,7 @@
 		};
 		BE08A25F230BE77F0087DB6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD29E24CA7932BBF1E5C80F0 /* Pods-SportsCasino.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +378,7 @@
 		};
 		BE08A260230BE77F0087DB6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAC1D8E5B6B1C44F8068F47F /* Pods-SportsCasino.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
