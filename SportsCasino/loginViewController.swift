@@ -16,6 +16,9 @@ class loginViewController: UIViewController {
     }
     // 入力した数字
     var textFieldNum = ""
+    
+    // 現在のポイント
+    var nowPoint = 0
     // 受け取るすポイントを入力するテキストフィールド
     @IBAction func uketoriText(_ sender: UITextField) {
         
@@ -24,6 +27,7 @@ class loginViewController: UIViewController {
     
     // テキストフィールドに入力したポイント受け取る
     @IBAction func uketoriBottun(_ sender: UIButton) {
+        
         showAlert(message: "\(textFieldNum)P受け取りました")
     }
     
@@ -35,6 +39,10 @@ class loginViewController: UIViewController {
         showAlert(message: "\(textFieldNum)P増えました")
         
     }
+    
+    // 現在のポイントを表示させるラベル
+    @IBOutlet weak var pointLabel: UILabel!
+    
     
     
     

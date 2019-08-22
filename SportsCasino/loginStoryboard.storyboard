@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--MYPOINT-->
         <scene sceneID="olu-Xj-FDE">
             <objects>
                 <viewController id="jKX-CN-Wgt" customClass="loginViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,8 +61,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lhF-YH-Muc"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hrZ-Oc-ZXy"/>
+                    <navigationItem key="navigationItem" title="MYPOINT" id="hrZ-Oc-ZXy"/>
                     <connections>
+                        <outlet property="pointLabel" destination="9kM-6t-c5Y" id="tl6-mM-Smx"/>
                         <segue destination="gia-GK-UjI" kind="show" id="cnH-d4-CUl"/>
                         <segue destination="fCf-e9-1eL" kind="show" id="GYj-mz-7m7"/>
                     </connections>
@@ -227,7 +228,7 @@
             </objects>
             <point key="canvasLocation" x="1674" y="7"/>
         </scene>
-        <!--Table View Controller-->
+        <!--マイページ-->
         <scene sceneID="i2c-dk-Kuv">
             <objects>
                 <tableViewController id="q3e-sy-87n" sceneMemberID="viewController">
@@ -236,21 +237,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zXJ-Y0-s4g">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="MJL-ej-PqS" style="IBUITableViewCellStyleDefault" id="zXJ-Y0-s4g">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zXJ-Y0-s4g" id="gq4-SP-GhL">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ギャンブル履歴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MJL-ej-PqS">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ckA-xJ-9wW" kind="show" id="4op-V4-Vx5"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="teW-04-LY9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Yo1-Gx-H3T" style="IBUITableViewCellStyleDefault" id="teW-04-LY9">
                                 <rect key="frame" x="0.0" y="72" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="teW-04-LY9" id="aYx-DN-0Dm">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yo1-Gx-H3T">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ozd-rO-LOu" kind="show" id="4tt-ae-YTU"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Rw2-bj-jTs" style="IBUITableViewCellStyleDefault" id="beq-Tp-XFM">
+                                <rect key="frame" x="0.0" y="116" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="beq-Tp-XFM" id="E7w-K3-myj">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="SportsCasinoの遊び方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rw2-bj-jTs">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="JWL-4u-hV4" kind="show" id="j8b-Qh-Ifn"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -258,43 +303,26 @@
                             <outlet property="delegate" destination="q3e-sy-87n" id="PMd-pv-b7w"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="LUy-2g-G7P"/>
-                    <connections>
-                        <segue destination="acl-LF-jFs" kind="show" id="bJG-XF-f21"/>
-                        <segue destination="ozd-rO-LOu" kind="show" id="sRs-48-Q1Y"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="マイページ" id="LUy-2g-G7P"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6y-bv-40z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3675" y="1242"/>
+            <point key="canvasLocation" x="3675" y="1550"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="pN5-vk-cIM">
+        <!--View Controller-->
+        <scene sceneID="CKv-6P-VDe">
             <objects>
-                <tableViewController id="acl-LF-jFs" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PKO-Yq-5s8">
+                <viewController id="ckA-xJ-9wW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4D-Nz-RaZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tIQ-1Y-VgG">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tIQ-1Y-VgG" id="lXx-gi-Mvk">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="acl-LF-jFs" id="ri2-LN-BMU"/>
-                            <outlet property="delegate" destination="acl-LF-jFs" id="ee4-Vg-PZD"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7j9-Pg-q24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="pN5-Gd-qlQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXR-sh-J6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4860" y="779"/>
+            <point key="canvasLocation" x="4860" y="827"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="NiL-Q6-u32">
@@ -305,12 +333,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZcR-FV-Ro7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="woK-UB-nbP" style="IBUITableViewCellStyleDefault" id="ZcR-FV-Ro7">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZcR-FV-Ro7" id="e3w-ts-ubE">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="会員登録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="woK-UB-nbP">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="EYh-Rr-LOl" style="IBUITableViewCellStyleDefault" id="xOb-yY-COU">
+                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xOb-yY-COU" id="tWC-L7-x8N">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="カード登録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EYh-Rr-LOl">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -323,6 +377,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJO-n5-AUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4860" y="1572"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ARe-j4-CSw">
+            <objects>
+                <viewController id="JWL-4u-hV4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQm-NC-Rb8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SportsCasinoの遊び方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beA-90-MxU">
+                                <rect key="frame" x="74" y="94" width="172.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxC-b1-wCE">
+                                <rect key="frame" x="20" y="134.5" width="280" height="406"/>
+                                <mutableString key="text">・SportsCasinoは好きな試合にポイントを賭けて遊ぶゲームです。
+・クレジットカードを登録し、ポイントを購入します。
+・ポイントは1万円で1ポイントとなります。
+・試合情報から賭けてみたい試合を選択し、賭けたいポイント数を入力して賭けます。
+・賭けポイントは1ポイントからになります。
+・勝ったチーム（個人競技の場合は選手）に賭けたポイントが増えます。これをあたりと呼びます。
+・当たると、当たった総ポイントから10%引かれたポイントが取り分となります。
+・会員登録をすると1ゲーム参加につき、0.1ポイントが付与されます。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kxC-b1-wCE" firstAttribute="top" secondItem="beA-90-MxU" secondAttribute="bottom" constant="20" id="987-Nv-UUY"/>
+                            <constraint firstItem="oAA-Mr-DKx" firstAttribute="trailing" secondItem="kxC-b1-wCE" secondAttribute="trailing" constant="20" id="RVF-XI-7dT"/>
+                            <constraint firstItem="beA-90-MxU" firstAttribute="top" secondItem="oAA-Mr-DKx" secondAttribute="top" constant="30" id="SUo-ap-94a"/>
+                            <constraint firstItem="beA-90-MxU" firstAttribute="centerX" secondItem="fQm-NC-Rb8" secondAttribute="centerX" id="akT-Xi-hea"/>
+                            <constraint firstItem="kxC-b1-wCE" firstAttribute="leading" secondItem="oAA-Mr-DKx" secondAttribute="leading" constant="20" id="m2M-DZ-c2E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oAA-Mr-DKx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2XF-wH-6wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4884" y="2314"/>
         </scene>
         <!--ポイント-->
         <scene sceneID="eRt-aC-kkf">
