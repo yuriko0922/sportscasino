@@ -11,38 +11,83 @@ import UIKit
 
 class loginViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
+    // 現在のポイントを表示させるラベル
+    @IBOutlet weak var nowPintLabel: UILabel!
+    
     // テキストフィールドに入力した数字を入れる
-    var textFieldNum = ""
+    var textFieldNum: Int = 0
     
     // 現在のポイント
     var nowPoint = 0
+    // 受け取る画面に遷移するためのボタン
+    @IBAction func senniUketori(_ sender: UIButton) {
+        // 遷移処理
+        performSegue(withIdentifier: "uketoru", sender: nil)
+    }
+    
+    // 増やす画面に遷移するためのボタン
+    @IBAction func senniFuyasu(_ sender: UIButton) {
+        // 遷移処理
+         performSegue(withIdentifier: "fuyasu", sender: nil)
+        
+    }
+    // ポイント受け取り画面にて押したら１ポイント増えるやつ
+    @IBAction func plus1Uketori(_ sender: Any) {
+        textFieldNum += 1
+        uketoriLabel.text = "\(textFieldNum)"
+        
+    }
+    // ポイント受け取り画面にて押したら100ポイント増えるやつ
+    @IBAction func puls100Uketori(_ sender: Any) {
+        textFieldNum += 100
+        uketoriLabel.text = "\(textFieldNum)"
+    }
     
     
+    // ポイント増やす画面にて押したら１ポイント増えるやつ
+    @IBAction func plus1Fuyasu(_ sender: Any) {
+        textFieldNum += 1
+        fuyasuLabel.text = "\(textFieldNum)"
+        
+    }
     
-    // 受け取るすポイントを入力するテキストフィールド
-    @IBOutlet weak var uketoriTextField: UITextField!
+    // ポイント増やす画面にて押したら100ポイント増えるやつ
+    @IBAction func plus100Fuyasu(_ sender: Any) {
+        textFieldNum += 100
+        fuyasuLabel.text = "\(textFieldNum)"
+        
+    }
+    
+    // 受け取るポイントを反映して表示するラベル
+    @IBOutlet weak var uketoriLabel: UILabel!
+    
+    
     
     // テキストフィールドに入力したポイント受け取る
     @IBAction func uketoriBottun(_ sender: UIButton) {
          // textfiledの内容取得
-        textFieldNum = uketoriTextField.text!
+       // textFieldNum = uketoriTextField.text!
+        
+        uketoriLabel.text = "\(textFieldNum)"
         // 入力した数のアラート出させる
         showAlert(message: "\(textFieldNum)P受け取りました")
     }
   
     
-    // 増やすポイントを入力するテキストフィールド
-    @IBOutlet weak var fuyasuTextField: UITextField!
+    // 増やすポイントを反映して表示するラベル
+    @IBOutlet weak var fuyasuLabel: UILabel!
     
     // テキストフィールドに入力したポイント数分増やす
     @IBAction func fuyasuBottun(_ sender: UIButton) {
         
         
         // textfiledの内容取得
-        textFieldNum = fuyasuTextField.text!
+        fuyasuLabel.text! = "\(textFieldNum)"
         
         print(textFieldNum)
         // 入力した数のアラート出させる
