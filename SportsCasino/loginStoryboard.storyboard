@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="3675" y="-465.84507042253523"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Uketori View Controller-->
         <scene sceneID="SB5-AY-0Tg">
             <objects>
-                <viewController id="gia-GK-UjI" customClass="loginViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gia-GK-UjI" customClass="uketoriViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vi-S0-MdT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +93,7 @@
                                 <rect key="frame" x="129" y="244.5" width="62" height="30"/>
                                 <state key="normal" title="受け取る"/>
                                 <connections>
-                                    <action selector="uketoriBottun:" destination="gia-GK-UjI" eventType="touchUpInside" id="fwB-vX-T1a"/>
+                                    <action selector="uketoriBottun:" destination="gia-GK-UjI" eventType="touchUpInside" id="gRF-JG-BkT"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-fK-xRD">
@@ -104,7 +104,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="+1P"/>
                                         <connections>
-                                            <action selector="plus1Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="FTT-rc-Fqv"/>
+                                            <action selector="plus1Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="zKI-xZ-PQN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-WU-Wp8">
@@ -116,7 +116,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="+100P"/>
                                         <connections>
-                                            <action selector="puls100Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="QJ7-ba-kf4"/>
+                                            <action selector="plus100Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="lru-9a-gfQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -159,17 +159,17 @@
                         <viewLayoutGuide key="safeArea" id="u87-eY-8rl"/>
                     </view>
                     <connections>
-                        <outlet property="uketoriLabel" destination="7RS-0T-DXL" id="BwF-Af-ZFF"/>
+                        <outlet property="uketoriLabel" destination="7RS-0T-DXL" id="gBn-1r-gGj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMZ-OT-yYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4860" y="-704.57746478873241"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Fuyasu View Controller-->
         <scene sceneID="5Fu-1d-e1m">
             <objects>
-                <viewController id="fCf-e9-1eL" customClass="loginViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fCf-e9-1eL" customClass="fuyasuViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qux-dF-pju">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,7 +184,7 @@
                                 <rect key="frame" x="130" y="244.5" width="60" height="30"/>
                                 <state key="normal" title="P 増やす"/>
                                 <connections>
-                                    <action selector="fuyasuBottun:" destination="fCf-e9-1eL" eventType="touchUpInside" id="ip4-yB-jOM"/>
+                                    <action selector="fuyasuBottun:" destination="fCf-e9-1eL" eventType="touchUpInside" id="FSr-Mq-gdf"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Xmm-u9-nhF">
@@ -195,7 +195,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="+1P"/>
                                         <connections>
-                                            <action selector="plus1Fuyasu:" destination="fCf-e9-1eL" eventType="touchUpInside" id="j5b-eG-O24"/>
+                                            <action selector="plus1Fuyasu:" destination="fCf-e9-1eL" eventType="touchUpInside" id="PTF-hn-vhG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okW-ec-1Xq">
@@ -207,7 +207,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="+100P"/>
                                         <connections>
-                                            <action selector="plus100Fuyasu:" destination="fCf-e9-1eL" eventType="touchUpInside" id="aEe-kw-Oeh"/>
+                                            <action selector="plus100Fuyasu:" destination="fCf-e9-1eL" eventType="touchUpInside" id="F5l-UB-nS3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -251,7 +251,7 @@
                         <viewLayoutGuide key="safeArea" id="0T1-Jq-Hu0"/>
                     </view>
                     <connections>
-                        <outlet property="fuyasuLabel" destination="3QR-Iw-jnx" id="HW3-7A-yZh"/>
+                        <outlet property="fuyasuLabel" destination="3QR-Iw-jnx" id="Is1-rO-d7l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8p-2j-766" userLabel="First Responder" sceneMemberID="firstResponder"/>
