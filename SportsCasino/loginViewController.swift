@@ -14,31 +14,42 @@ class loginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    // 入力した数字
+    // テキストフィールドに入力した数字を入れる
     var textFieldNum = ""
     
     // 現在のポイント
     var nowPoint = 0
+    
+    
+    
     // 受け取るすポイントを入力するテキストフィールド
-    @IBAction func uketoriText(_ sender: UITextField) {
-        
-       
-    }
+    @IBOutlet weak var uketoriTextField: UITextField!
     
     // テキストフィールドに入力したポイント受け取る
     @IBAction func uketoriBottun(_ sender: UIButton) {
-        
+         // textfiledの内容取得
+        textFieldNum = uketoriTextField.text!
+        // 入力した数のアラート出させる
         showAlert(message: "\(textFieldNum)P受け取りました")
     }
+  
     
     // 増やすポイントを入力するテキストフィールド
-    @IBAction func fuyasuText(_ sender: UITextField) {
-    }
+    @IBOutlet weak var fuyasuTextField: UITextField!
+    
     // テキストフィールドに入力したポイント数分増やす
     @IBAction func fuyasuBottun(_ sender: UIButton) {
-        showAlert(message: "\(textFieldNum)P増えました")
+        
+        
+        // textfiledの内容取得
+        textFieldNum = fuyasuTextField.text!
+        
+        print(textFieldNum)
+        // 入力した数のアラート出させる
+      showAlert(message: "\(textFieldNum)P増えました")
         
     }
+    
     
     // 現在のポイントを表示させるラベル
     @IBOutlet weak var pointLabel: UILabel!

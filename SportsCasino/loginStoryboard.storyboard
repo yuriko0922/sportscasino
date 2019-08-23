@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="whd-v5-wsS">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -36,16 +36,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A20-4t-Co3">
                                         <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
                                         <state key="normal" title="受け取る"/>
-                                        <connections>
-                                            <segue destination="gia-GK-UjI" kind="presentation" id="0Bk-JT-fas"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnn-FX-lWR">
                                         <rect key="frame" x="152" y="0.0" width="62" height="30"/>
                                         <state key="normal" title="増やす"/>
-                                        <connections>
-                                            <segue destination="fCf-e9-1eL" kind="presentation" id="ecK-EH-qYw"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -64,18 +58,18 @@
                     <navigationItem key="navigationItem" title="MYPOINT" id="hrZ-Oc-ZXy"/>
                     <connections>
                         <outlet property="pointLabel" destination="9kM-6t-c5Y" id="tl6-mM-Smx"/>
-                        <segue destination="gia-GK-UjI" kind="show" id="cnH-d4-CUl"/>
-                        <segue destination="fCf-e9-1eL" kind="show" id="GYj-mz-7m7"/>
+                        <segue destination="gia-GK-UjI" kind="show" identifier="uketoru" id="cnH-d4-CUl"/>
+                        <segue destination="fCf-e9-1eL" kind="show" identifier="fuyasu" id="q6a-m8-jLM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvu-my-g08" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3675" y="-465.84507042253523"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="SB5-AY-0Tg">
             <objects>
-                <viewController id="gia-GK-UjI" sceneMemberID="viewController">
+                <viewController id="gia-GK-UjI" customClass="loginViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vi-S0-MdT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,15 +88,12 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="uketoriText:" destination="gie-20-Wej" eventType="editingDidEnd" id="awh-el-4OM"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqz-hV-NI8">
                                 <rect key="frame" x="122.5" y="235" width="75" height="30"/>
                                 <state key="normal" title="P 受け取る"/>
                                 <connections>
-                                    <action selector="uketoriBottun:" destination="gie-20-Wej" eventType="touchUpInside" id="IUM-6Z-rxh"/>
+                                    <action selector="uketoriBottun:" destination="gia-GK-UjI" eventType="touchUpInside" id="fwB-vX-T1a"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,16 +108,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u87-eY-8rl"/>
                     </view>
+                    <connections>
+                        <outlet property="uketoriTextField" destination="N44-hC-7dl" id="cjw-1t-6aT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMZ-OT-yYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="gie-20-Wej" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4860" y="-704.57746478873241"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="5Fu-1d-e1m">
             <objects>
-                <viewController id="fCf-e9-1eL" sceneMemberID="viewController">
+                <viewController id="fCf-e9-1eL" customClass="loginViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qux-dF-pju">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,15 +138,12 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="fuyasuText:" destination="Mit-th-kTV" eventType="editingDidEnd" id="75k-Rz-zRX"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQl-Wt-Dcc">
                                 <rect key="frame" x="130" y="235" width="60" height="30"/>
                                 <state key="normal" title="P 増やす"/>
                                 <connections>
-                                    <action selector="fuyasuBottun:" destination="Mit-th-kTV" eventType="touchUpInside" id="eUS-Ty-1VY"/>
+                                    <action selector="fuyasuBottun:" destination="fCf-e9-1eL" eventType="touchUpInside" id="ip4-yB-jOM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -168,9 +158,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0T1-Jq-Hu0"/>
                     </view>
+                    <connections>
+                        <outlet property="fuyasuTextField" destination="kzN-yA-rkf" id="PBt-gp-jAL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8p-2j-766" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Mit-th-kTV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4860" y="6.3380281690140849"/>
         </scene>
@@ -185,7 +177,7 @@
                         <viewLayoutGuide key="safeArea" id="3fL-GL-wed"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ホーム" image="icons8-home-50" id="1RG-A7-xIm">
-                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="4"/>
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="4"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Si-ec-V3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -202,7 +194,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Nb7-vb-ccN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="試合" image="icons8-leaderboard-50" id="ymf-Wq-eTA"/>
+                    <tabBarItem key="tabBarItem" title="試合" image="icons8-leaderboard-50" id="ymf-Wq-eTA">
+                        <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIY-9j-LVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -394,14 +388,14 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxC-b1-wCE">
                                 <rect key="frame" x="20" y="134.5" width="280" height="406"/>
-                                <mutableString key="text">・SportsCasinoは好きな試合にポイントを賭けて遊ぶゲームです。
+                                <string key="text">・SportsCasinoは好きな試合にポイントを賭けて遊ぶゲームです。
 ・クレジットカードを登録し、ポイントを購入します。
 ・ポイントは1万円で1ポイントとなります。
 ・試合情報から賭けてみたい試合を選択し、賭けたいポイント数を入力して賭けます。
 ・賭けポイントは1ポイントからになります。
 ・勝ったチーム（個人競技の場合は選手）に賭けたポイントが増えます。これをあたりと呼びます。
 ・当たると、当たった総ポイントから10%引かれたポイントが取り分となります。
-・会員登録をすると1ゲーム参加につき、0.1ポイントが付与されます。</mutableString>
+・会員登録をすると1ゲーム参加につき、0.1ポイントが付与されます。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -471,8 +465,4 @@
         <image name="icons8-home-50" width="50" height="50"/>
         <image name="icons8-leaderboard-50" width="50" height="50"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="GYj-mz-7m7"/>
-        <segue reference="cnH-d4-CUl"/>
-    </inferredMetricsTieBreakers>
 </document>
