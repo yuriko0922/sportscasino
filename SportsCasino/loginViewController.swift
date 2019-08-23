@@ -11,19 +11,36 @@ import UIKit
 
 class loginViewController: UIViewController {
 
+    // 現在のポイントを表示するラベル
+    @IBOutlet weak var nowPointLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    // 現在のポイントを表示させるラベル
-    @IBOutlet weak var nowPintLabel: UILabel!
-    
+
     // テキストフィールドに入力した数字を入れる
     var textFieldNum: Int = 0
     
     // 現在のポイント
     var nowPoint = 0
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
+       
+    }
+    
+    override func viewDidLayoutSubviews() {
+        
+        
+    }
+
+
     // 受け取る画面に遷移するためのボタン
     @IBAction func senniUketori(_ sender: UIButton) {
         // 遷移処理
@@ -40,6 +57,10 @@ class loginViewController: UIViewController {
     @IBAction func plus1Uketori(_ sender: Any) {
         textFieldNum += 1
         uketoriLabel.text = "\(textFieldNum)"
+        
+        nowPointLabel.text = "aa"
+        print(nowPointLabel.text)
+        print(textFieldNum)
         
     }
     // ポイント受け取り画面にて押したら100ポイント増えるやつ
@@ -76,6 +97,11 @@ class loginViewController: UIViewController {
         uketoriLabel.text = "\(textFieldNum)"
         // 入力した数のアラート出させる
         showAlert(message: "\(textFieldNum)P受け取りました")
+        // リセット
+        // 数字をリセット
+        textFieldNum = 0
+        // ラベルに表示される文字列もリセット
+        uketoriLabel.text = ""
     }
   
     
@@ -88,11 +114,13 @@ class loginViewController: UIViewController {
         
         // textfiledの内容取得
         fuyasuLabel.text! = "\(textFieldNum)"
-        
-        print(textFieldNum)
         // 入力した数のアラート出させる
       showAlert(message: "\(textFieldNum)P増えました")
-        
+        // リセット
+        // 数字をリセット
+        textFieldNum = 0
+        // ラベルに表示される文字列もリセット
+        fuyasuLabel.text! = ""
     }
     
     

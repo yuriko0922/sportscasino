@@ -25,7 +25,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kM-6t-c5Y">
-                                <rect key="frame" x="139" y="231.5" width="42" height="20.5"/>
+                                <rect key="frame" x="110" y="231.5" width="100" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VJi-O6-gON"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,8 +66,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="MYPOINT" id="hrZ-Oc-ZXy"/>
                     <connections>
-                        <outlet property="nowPintLabel" destination="9kM-6t-c5Y" id="ouS-ic-cKk"/>
-                        <outlet property="pointLabel" destination="9kM-6t-c5Y" id="tl6-mM-Smx"/>
+                        <outlet property="nowPointLabel" destination="9kM-6t-c5Y" id="tKF-oT-8ek"/>
                         <segue destination="gia-GK-UjI" kind="show" identifier="uketoru" id="cnH-d4-CUl"/>
                         <segue destination="fCf-e9-1eL" kind="show" identifier="fuyasu" id="q6a-m8-jLM"/>
                     </connections>
