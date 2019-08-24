@@ -18,34 +18,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在のポイント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-mu-K5S">
-                                <rect key="frame" x="99.5" y="191" width="121.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kM-6t-c5Y">
-                                <rect key="frame" x="110" y="231.5" width="100" height="20.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SportsCasinoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="ykd-Mb-bl7">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="VJi-O6-gON"/>
+                                    <constraint firstAttribute="width" secondItem="ykd-Mb-bl7" secondAttribute="height" multiplier="1:1" id="5XF-0a-iv0"/>
+                                    <constraint firstAttribute="width" constant="300" id="Ixy-8I-hgd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在のポイント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-mu-K5S">
+                                <rect key="frame" x="50.5" y="191" width="219.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="ryN-qO-tsd">
-                                <rect key="frame" x="53" y="339" width="214" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rQk-nk-E1K">
+                                <rect key="frame" x="120" y="278" width="80" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kM-6t-c5Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="gyK-3y-hbH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOy-9h-nOJ">
+                                        <rect key="frame" x="65" y="0.0" width="15" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="6xa-G6-mCR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kGN-DM-gzj"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ryN-qO-tsd">
+                                <rect key="frame" x="23" y="321" width="274" height="48"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A20-4t-Co3">
-                                        <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
-                                        <state key="normal" title="受け取る"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="48"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.25430757705479451" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="nIr-0w-jj9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="受け取る">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="senniUketori:" destination="jKX-CN-Wgt" eventType="touchUpInside" id="uSe-Wn-gfB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnn-FX-lWR">
-                                        <rect key="frame" x="152" y="0.0" width="62" height="30"/>
-                                        <state key="normal" title="増やす"/>
+                                        <rect key="frame" x="152" y="0.0" width="122" height="48"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.24917059075342465" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="増やす">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="senniFuyasu:" destination="jKX-CN-Wgt" eventType="touchUpInside" id="wCX-uf-uzy"/>
                                         </connections>
@@ -53,14 +94,16 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.80471425510000005" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lhF-YH-Muc" firstAttribute="bottom" secondItem="ryN-qO-tsd" secondAttribute="bottom" constant="150" id="1zM-cz-Iac"/>
-                            <constraint firstItem="9kM-6t-c5Y" firstAttribute="top" secondItem="ieg-mu-K5S" secondAttribute="bottom" constant="20" id="3jZ-oM-Ga7"/>
                             <constraint firstItem="ieg-mu-K5S" firstAttribute="top" secondItem="lhF-YH-Muc" secondAttribute="top" constant="127" id="6oW-a4-741"/>
+                            <constraint firstItem="rQk-nk-E1K" firstAttribute="centerX" secondItem="P6m-r5-ItM" secondAttribute="centerX" id="BCW-XB-wGE"/>
+                            <constraint firstItem="ykd-Mb-bl7" firstAttribute="centerX" secondItem="P6m-r5-ItM" secondAttribute="centerX" id="J02-4A-Cee"/>
                             <constraint firstItem="ieg-mu-K5S" firstAttribute="centerX" secondItem="P6m-r5-ItM" secondAttribute="centerX" id="NsG-a3-F7Z"/>
-                            <constraint firstItem="9kM-6t-c5Y" firstAttribute="centerX" secondItem="P6m-r5-ItM" secondAttribute="centerX" id="c2v-G3-PEk"/>
                             <constraint firstItem="ryN-qO-tsd" firstAttribute="centerX" secondItem="P6m-r5-ItM" secondAttribute="centerX" id="cft-pR-iI8"/>
+                            <constraint firstItem="rQk-nk-E1K" firstAttribute="top" secondItem="ieg-mu-K5S" secondAttribute="bottom" constant="50" id="okO-uB-Dke"/>
+                            <constraint firstItem="ykd-Mb-bl7" firstAttribute="centerY" secondItem="P6m-r5-ItM" secondAttribute="centerY" id="p2t-JW-dIi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lhF-YH-Muc"/>
                     </view>
@@ -86,43 +129,51 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポイントを受け取る" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES7-ff-ekR">
                                 <rect key="frame" x="82" y="114" width="156" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqz-hV-NI8">
                                 <rect key="frame" x="129" y="244.5" width="62" height="30"/>
-                                <state key="normal" title="受け取る"/>
+                                <state key="normal" title="受け取る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="uketoriBottun:" destination="gia-GK-UjI" eventType="touchUpInside" id="gRF-JG-BkT"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-fK-xRD">
-                                <rect key="frame" x="5" y="394.5" width="310" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-fK-xRD">
+                                <rect key="frame" x="45" y="394.5" width="230" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78O-cj-9MN">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+1P"/>
+                                        <state key="normal" title="+1P">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="plus1Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="zKI-xZ-PQN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ6-Kx-FUu">
-                                        <rect key="frame" x="120" y="0.0" width="70" height="50"/>
+                                        <rect key="frame" x="80" y="0.0" width="70" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+10P"/>
+                                        <state key="normal" title="+10P">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="plus10Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="3XH-5c-OCK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-WU-Wp8">
-                                        <rect key="frame" x="240" y="0.0" width="70" height="50"/>
+                                        <rect key="frame" x="160" y="0.0" width="70" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="J9i-CR-Ky8"/>
                                             <constraint firstAttribute="height" constant="50" id="yLf-wZ-IxS"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+100P"/>
+                                        <state key="normal" title="+100P">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="plus100Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="lru-9a-gfQ"/>
                                         </connections>
@@ -138,7 +189,7 @@
                                             <constraint firstAttribute="width" constant="60" id="bi7-OF-gQo"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGG-r4-rAT">
@@ -147,13 +198,13 @@
                                             <constraint firstAttribute="width" constant="15" id="9Um-JB-LqO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JrM-fK-xRD" firstAttribute="top" secondItem="Xqz-hV-NI8" secondAttribute="bottom" constant="120" id="Hyf-Of-7lK"/>
                             <constraint firstItem="ES7-ff-ekR" firstAttribute="top" secondItem="u87-eY-8rl" secondAttribute="top" constant="50" id="L0b-BU-U20"/>
@@ -185,43 +236,51 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポイントを増やす" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vip-s9-ftN">
                                 <rect key="frame" x="90.5" y="114" width="139" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQl-Wt-Dcc">
-                                <rect key="frame" x="130" y="244.5" width="60" height="30"/>
-                                <state key="normal" title="P 増やす"/>
+                                <rect key="frame" x="137" y="244.5" width="46" height="30"/>
+                                <state key="normal" title="増やす">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="fuyasuBottun:" destination="fCf-e9-1eL" eventType="touchUpInside" id="FSr-Mq-gdf"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Xmm-u9-nhF">
-                                <rect key="frame" x="5" y="394.5" width="310" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xmm-u9-nhF">
+                                <rect key="frame" x="45" y="394.5" width="230" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFN-IF-NaD">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+1P"/>
+                                        <state key="normal" title="+1P">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="plus1Fuyasu:" destination="fCf-e9-1eL" eventType="touchUpInside" id="PTF-hn-vhG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmS-yj-ogm">
-                                        <rect key="frame" x="120" y="0.0" width="70" height="50"/>
+                                        <rect key="frame" x="80" y="0.0" width="70" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+10P"/>
+                                        <state key="normal" title="+10P">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="plus10Fuysu:" destination="fCf-e9-1eL" eventType="touchUpInside" id="lAW-ei-ulR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okW-ec-1Xq">
-                                        <rect key="frame" x="240" y="0.0" width="70" height="50"/>
+                                        <rect key="frame" x="160" y="0.0" width="70" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="5m6-Tr-LWf"/>
                                             <constraint firstAttribute="height" constant="50" id="VYh-HR-Qbz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="+100P"/>
+                                        <state key="normal" title="+100P">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="plus100Fuyasu:" destination="fCf-e9-1eL" eventType="touchUpInside" id="F5l-UB-nS3"/>
                                         </connections>
@@ -238,7 +297,7 @@
                                             <constraint firstAttribute="width" constant="60" id="htK-XE-lxO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPe-fu-2ss">
@@ -247,13 +306,13 @@
                                             <constraint firstAttribute="width" constant="15" id="Bjg-4H-326"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vip-s9-ftN" firstAttribute="centerX" secondItem="Qux-dF-pju" secondAttribute="centerX" id="BGn-eM-pna"/>
                             <constraint firstItem="fQl-Wt-Dcc" firstAttribute="top" secondItem="m53-oC-F6z" secondAttribute="bottom" constant="30" id="Mci-vB-Zqd"/>
@@ -277,7 +336,7 @@
         <!--ホーム-->
         <scene sceneID="SVs-mn-bVh">
             <objects>
-                <viewController id="XVQ-rx-r6T" customClass="loginViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XVQ-rx-r6T" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O5C-Pq-BPn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -318,6 +377,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="XVQ-rx-r6T" kind="relationship" relationship="viewControllers" id="GQm-lA-rwP"/>
@@ -535,6 +595,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y2s-AB-uKn">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -568,6 +632,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SportsCasinoロゴ" width="600" height="600"/>
         <image name="icons8-boy-50" width="50" height="50"/>
         <image name="icons8-financial-success-50" width="50" height="50"/>
         <image name="icons8-home-50" width="50" height="50"/>

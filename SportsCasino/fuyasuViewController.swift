@@ -10,49 +10,61 @@ import UIKit
 
 class fuyasuViewController: UIViewController {
     
-    var textFieldNum = 0
-    var nowPoint = 0
+  //  var textFieldNum = 0
+ //   var nowPoint = 0
+    
+    var currentNum = 0
 
+    // データクラスのインスタンス化
+//    var data = Data(now: Int, textNum: Int)
+    
+    let singleton :Singleton = Singleton.shered
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+     //   data.textFieldNum = 0
+    }
+    
  // ポイント増やす画面にて押したら１ポイント増えるやつ
     @IBAction func plus1Fuyasu(_ sender: UIButton) {
-        textFieldNum += 1
-        fuyasuLabel.text = "\(textFieldNum)"
+        addNum(plus: 1)
     }
+    
     //ポイント増やす画面にて押したら10ポイント増えるやつ
     @IBAction func plus10Fuysu(_ sender: UIButton) {
-        textFieldNum += 10
-        fuyasuLabel.text = "\(textFieldNum)"
+        addNum(plus: 10)
     }
     
-     // ポイント増やす画面にて押したら100ポイント増えるやつ
-    
+    // ポイント増やす画面にて押したら100ポイント増えるやつ
     @IBAction func plus100Fuyasu(_ sender: UIButton) {
-        textFieldNum += 100
-        fuyasuLabel.text = "\(textFieldNum)"
-        
+        addNum(plus: 100)
     }
+    
+    func addNum(plus: Int) {
+        currentNum += plus
+        fuyasuLabel.text = "\(currentNum)"
+    }
+    
     // 増やすポイントを反映して表示するラベル
     @IBOutlet weak var fuyasuLabel: UILabel!
+    
     // テキストフィールドに入力したポイント数分増やす
     @IBAction func fuyasuBottun(_ sender: UIButton) {
         // textfiledの内容取得
-        fuyasuLabel.text! = "\(textFieldNum)"
-        // 現在のポイントに反映させる
-        nowPoint += textFieldNum
+        fuyasuLabel.text! = "\(currentNum)"
+        // 現在のポイントに反映させる 元々のNowpointをgetしないとcurrentNumだけだと更新されちゃうから
+        singleton.saveNowPoint(nowPoint: singleton.getNowPoint() + currentNum)
         // 入力した数のアラート出させる
-        showAlert(message: "\(textFieldNum)P増えました")
+        showAlert(message: "\(currentNum)P増えました")
         // リセット
         // 数字をリセット
-        textFieldNum = 0
+   //     data.textFieldNum = 0
         // ラベルに表示される文字列もリセット
         fuyasuLabel.text! = ""
-        
-         showAlert(message: "閉じる")
+
     }
     
     // アラートを表示する関数

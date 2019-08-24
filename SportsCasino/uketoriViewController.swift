@@ -10,9 +10,10 @@ import UIKit
 
 class uketoriViewController: UIViewController {
     // ポイントラベルに表示される値
-    var textFieldNum = 0
-    // 現在のポイント
-    var nowPoint = 0
+    var uketoriNum = 0
+    
+    let singleton :Singleton = Singleton.shered
+    
 
     
     override func viewDidLoad() {
@@ -21,21 +22,21 @@ class uketoriViewController: UIViewController {
     }
     // ポイント受け取り画面にて押したら１ポイント増えるやつ
     @IBAction func plus1Uketori(_ sender: UIButton) {
-        textFieldNum += 1
-        uketoriLabel.text = "\(textFieldNum)"
+        uketoriNum += 1
+        uketoriLabel.text = "\(uketoriNum)"
         
     }
     
     // ポイント受け取り画面にて押したら10ポイント増えるやつ
     @IBAction func plus10Uketori(_ sender: UIButton) {
-        textFieldNum += 10
-        uketoriLabel.text = "\(textFieldNum)"
+       uketoriNum += 10
+        uketoriLabel.text = "\(uketoriNum)"
     }
     
     // ポイント受け取り画面にて押したら100ポイント増えるやつ
     @IBAction func plus100Uketori(_ sender: UIButton) {
-        textFieldNum += 100
-        uketoriLabel.text = "\(textFieldNum)"
+       uketoriNum += 100
+        uketoriLabel.text = "\(uketoriNum)"
     }
      // 受け取るポイントを反映して表示するラベル
     @IBOutlet weak var uketoriLabel: UILabel!
@@ -43,18 +44,15 @@ class uketoriViewController: UIViewController {
      // テキストフィールドに入力したポイント受け取る
     @IBAction func uketoriBottun(_ sender: UIButton) {
         // textfiledの内容取得
-    uketoriLabel.text = "\(textFieldNum)"
+    uketoriLabel.text = "\(uketoriNum)"
         // 現在のポイントに反映させる
-        nowPoint -= textFieldNum
+  singleton.saveNowPoint(nowPoint: singleton.getNowPoint() - uketoriNum)
         // 入力した数のアラート出させる
- showAlert(message: "\(textFieldNum)P受け取りました")
+ showAlert(message: "\(uketoriNum)P受け取りました")
         // リセット
         // 数字をリセット
-       textFieldNum = 0
+       uketoriNum = 0
     // ラベルに表示される文字列もリセット
-        showAlert(message: "閉じる")
-        //Alert().showAlert(message: "\(textFieldNum)P受け取りました" ,vc: self)
-        //present(,animated: true, completion: nil)
         
        uketoriLabel.text = ""
         

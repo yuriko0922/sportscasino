@@ -11,12 +11,12 @@ import UIKit
 
 class loginViewController: UIViewController {
     
-var nowPoint = 0
+ //   var nowPoint = 0
     
     // 現在のポイントを表示するラベル
     @IBOutlet weak var nowPointLabel: UILabel!
     
-    var data = Data()
+    var singleton: Singleton = Singleton.shered
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +25,7 @@ var nowPoint = 0
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        data.textFieldNum = 00
-        nowPointLabel.text = "\(nowPoint)"
-       
-       
+        nowPointLabel.text = "\(singleton.getNowPoint())"
     }
     
     override func viewDidLayoutSubviews() {
