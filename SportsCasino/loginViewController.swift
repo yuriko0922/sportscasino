@@ -10,34 +10,29 @@ import UIKit
 
 
 class loginViewController: UIViewController {
-
+    
+var nowPoint = 0
+    
     // 現在のポイントを表示するラベル
     @IBOutlet weak var nowPointLabel: UILabel!
     
-    // テキストフィールドに入力した数字を入れる
-    var textFieldNum: Int = 0
-   
-    
-    // 現在のポイント
-    var nowPoint = 0
-
+    var data = Data()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        data.textFieldNum = 00
+        nowPointLabel.text = "\(nowPoint)"
        
        
     }
     
     override func viewDidLayoutSubviews() {
-        
-        
+
     }
 
 
@@ -53,37 +48,8 @@ class loginViewController: UIViewController {
          performSegue(withIdentifier: "fuyasu", sender: nil)
         
     }
-    
-   
-    
-    
-    
-    
-    
-    
-    
-   
-    
-    
-    
-    
-  
-    
-   
-    
-    
-        
-        
-    
-    
-    
-   
-    
-    
-    
-    
     // アラートを表示する関数
-    func showAlert(message: String) {
+    /*func showAlert(message: String) {
         //アラートの作成
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         //アラートのアクション(ボタン部分の定義）
@@ -92,6 +58,6 @@ class loginViewController: UIViewController {
         alert.addAction(close)
         //アラートを表示する
         present(alert,animated: true, completion: nil)
-    }
+    }*/
 
 }

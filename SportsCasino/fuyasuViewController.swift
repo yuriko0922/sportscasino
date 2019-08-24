@@ -9,15 +9,13 @@
 import UIKit
 
 class fuyasuViewController: UIViewController {
-
-    // テキストフィールドに入力した数字を入れる
-    var textFieldNum: Int = 0
     
+    var textFieldNum = 0
+    var nowPoint = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
  // ポイント増やす画面にて押したら１ポイント増えるやつ
@@ -25,6 +23,12 @@ class fuyasuViewController: UIViewController {
         textFieldNum += 1
         fuyasuLabel.text = "\(textFieldNum)"
     }
+    //ポイント増やす画面にて押したら10ポイント増えるやつ
+    @IBAction func plus10Fuysu(_ sender: UIButton) {
+        textFieldNum += 10
+        fuyasuLabel.text = "\(textFieldNum)"
+    }
+    
      // ポイント増やす画面にて押したら100ポイント増えるやつ
     
     @IBAction func plus100Fuyasu(_ sender: UIButton) {
@@ -38,6 +42,8 @@ class fuyasuViewController: UIViewController {
     @IBAction func fuyasuBottun(_ sender: UIButton) {
         // textfiledの内容取得
         fuyasuLabel.text! = "\(textFieldNum)"
+        // 現在のポイントに反映させる
+        nowPoint += textFieldNum
         // 入力した数のアラート出させる
         showAlert(message: "\(textFieldNum)P増えました")
         // リセット
@@ -45,18 +51,20 @@ class fuyasuViewController: UIViewController {
         textFieldNum = 0
         // ラベルに表示される文字列もリセット
         fuyasuLabel.text! = ""
+        
+         showAlert(message: "閉じる")
     }
     
     // アラートを表示する関数
-    func showAlert(message: String) {
-        //アラートの作成
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        //アラートのアクション(ボタン部分の定義）
-        let close = UIAlertAction(title: "閉じる", style: .cancel, handler: nil)
-        //作成したアラートに閉じるボタン追加
-        alert.addAction(close)
-        //アラートを表示する
-        present(alert,animated: true, completion: nil)
-    }
+//    func showAlert(message: String) {
+//        //アラートの作成
+//        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+//        //アラートのアクション(ボタン部分の定義）
+//        let close = UIAlertAction(title: "閉じる", style: .cancel, handler: nil)
+//        //作成したアラートに閉じるボタン追加
+//        alert.addAction(close)
+//        //アラートを表示する
+//        present(alert,animated: true, completion: nil)
+//    }
     
 }

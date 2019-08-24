@@ -18,6 +18,8 @@
 		BE08A266230C07A30087DB6A /* Amana in Resources */ = {isa = PBXBuildFile; fileRef = BE08A265230C07A30087DB6A /* Amana */; };
 		BECA316F230FCA7700457C7E /* uketoriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA316E230FCA7700457C7E /* uketoriViewController.swift */; };
 		BECA3171230FCEBD00457C7E /* fuyasuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3170230FCEBD00457C7E /* fuyasuViewController.swift */; };
+		BECA3173230FDACE00457C7E /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3172230FDACE00457C7E /* data.swift */; };
+		BECA3175230FDC7900457C7E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3174230FDC7900457C7E /* Alert.swift */; };
 		BEE00990230E7A2200464B43 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0098F230E7A2200464B43 /* loginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		BE08A265230C07A30087DB6A /* Amana */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Amana; sourceTree = "<group>"; };
 		BECA316E230FCA7700457C7E /* uketoriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uketoriViewController.swift; sourceTree = "<group>"; };
 		BECA3170230FCEBD00457C7E /* fuyasuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuyasuViewController.swift; sourceTree = "<group>"; };
+		BECA3172230FDACE00457C7E /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		BECA3174230FDC7900457C7E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BEE0098F230E7A2200464B43 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		EDAB180AD9306DBA12C3C622 /* Pods_SportsCasino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsCasino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC1D8E5B6B1C44F8068F47F /* Pods-SportsCasino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsCasino.release.xcconfig"; path = "Target Support Files/Pods-SportsCasino/Pods-SportsCasino.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,10 +100,12 @@
 				BE08A256230BE77F0087DB6A /* Assets.xcassets */,
 				BE08A258230BE77F0087DB6A /* LaunchScreen.storyboard */,
 				BEE0098F230E7A2200464B43 /* loginViewController.swift */,
+				BECA3174230FDC7900457C7E /* Alert.swift */,
 				BE08A25B230BE77F0087DB6A /* Info.plist */,
 				BE08A265230C07A30087DB6A /* Amana */,
 				BE08A263230C06B20087DB6A /* K Gothic */,
 				BE08A261230BE8B60087DB6A /* loginStoryboard.storyboard */,
+				BECA3172230FDACE00457C7E /* data.swift */,
 				BECA316E230FCA7700457C7E /* uketoriViewController.swift */,
 				BECA3170230FCEBD00457C7E /* fuyasuViewController.swift */,
 			);
@@ -225,10 +231,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BECA316F230FCA7700457C7E /* uketoriViewController.swift in Sources */,
+				BECA3173230FDACE00457C7E /* data.swift in Sources */,
 				BECA3171230FCEBD00457C7E /* fuyasuViewController.swift in Sources */,
 				BE08A252230BE77C0087DB6A /* ViewController.swift in Sources */,
 				BE08A250230BE77C0087DB6A /* AppDelegate.swift in Sources */,
 				BEE00990230E7A2200464B43 /* loginViewController.swift in Sources */,
+				BECA3175230FDC7900457C7E /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

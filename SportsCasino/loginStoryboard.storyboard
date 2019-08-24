@@ -21,7 +21,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在のポイント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-mu-K5S">
                                 <rect key="frame" x="99.5" y="191" width="121.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kM-6t-c5Y">
@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="width" constant="100" id="VJi-O6-gON"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="ryN-qO-tsd">
@@ -53,7 +53,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.80471425510000005" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lhF-YH-Muc" firstAttribute="bottom" secondItem="ryN-qO-tsd" secondAttribute="bottom" constant="150" id="1zM-cz-Iac"/>
                             <constraint firstItem="9kM-6t-c5Y" firstAttribute="top" secondItem="ieg-mu-K5S" secondAttribute="bottom" constant="20" id="3jZ-oM-Ga7"/>
@@ -97,7 +97,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-fK-xRD">
-                                <rect key="frame" x="65" y="394.5" width="190" height="50"/>
+                                <rect key="frame" x="5" y="394.5" width="310" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78O-cj-9MN">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
@@ -107,8 +107,16 @@
                                             <action selector="plus1Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="zKI-xZ-PQN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-WU-Wp8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ6-Kx-FUu">
                                         <rect key="frame" x="120" y="0.0" width="70" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="+10P"/>
+                                        <connections>
+                                            <action selector="plus10Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="3XH-5c-OCK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-WU-Wp8">
+                                        <rect key="frame" x="240" y="0.0" width="70" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="J9i-CR-Ky8"/>
                                             <constraint firstAttribute="height" constant="50" id="yLf-wZ-IxS"/>
@@ -188,7 +196,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Xmm-u9-nhF">
-                                <rect key="frame" x="65" y="394.5" width="190" height="50"/>
+                                <rect key="frame" x="5" y="394.5" width="310" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFN-IF-NaD">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
@@ -198,8 +206,16 @@
                                             <action selector="plus1Fuyasu:" destination="fCf-e9-1eL" eventType="touchUpInside" id="PTF-hn-vhG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okW-ec-1Xq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmS-yj-ogm">
                                         <rect key="frame" x="120" y="0.0" width="70" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="+10P"/>
+                                        <connections>
+                                            <action selector="plus10Fuysu:" destination="fCf-e9-1eL" eventType="touchUpInside" id="lAW-ei-ulR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okW-ec-1Xq">
+                                        <rect key="frame" x="240" y="0.0" width="70" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="5m6-Tr-LWf"/>
                                             <constraint firstAttribute="height" constant="50" id="VYh-HR-Qbz"/>
@@ -215,7 +231,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m53-oC-F6z">
                                 <rect key="frame" x="120" y="164.5" width="80" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QR-Iw-jnx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QR-Iw-jnx">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="JeP-aO-4hD"/>
