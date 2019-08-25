@@ -23,6 +23,8 @@
 		BECA3173230FDACE00457C7E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3172230FDACE00457C7E /* Data.swift */; };
 		BECA3175230FDC7900457C7E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3174230FDC7900457C7E /* Alert.swift */; };
 		BEE00990230E7A2200464B43 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0098F230E7A2200464B43 /* loginViewController.swift */; };
+		BEEC09F12312363F002C9C10 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC09F02312363F002C9C10 /* HowToViewController.swift */; };
+		BEEC09F323123F13002C9C10 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = BEEC09F223123F12002C9C10 /* GoogleService-Info (1).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		BECA3172230FDACE00457C7E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		BECA3174230FDC7900457C7E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BEE0098F230E7A2200464B43 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		BEEC09F02312363F002C9C10 /* HowToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
+		BEEC09F223123F12002C9C10 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		EDAB180AD9306DBA12C3C622 /* Pods_SportsCasino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsCasino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC1D8E5B6B1C44F8068F47F /* Pods-SportsCasino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsCasino.release.xcconfig"; path = "Target Support Files/Pods-SportsCasino/Pods-SportsCasino.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +118,8 @@
 				BECA3170230FCEBD00457C7E /* fuyasuViewController.swift */,
 				BEC9A69E23112DB30049D896 /* TableViewController.swift */,
 				BEC9A6A0231134D80049D896 /* TableViewController2.swift */,
+				BEEC09F02312363F002C9C10 /* HowToViewController.swift */,
+				BEEC09F223123F12002C9C10 /* GoogleService-Info (1).plist */,
 			);
 			path = SportsCasino;
 			sourceTree = "<group>";
@@ -184,6 +190,7 @@
 				BE08A266230C07A30087DB6A /* Amana in Resources */,
 				BE08A255230BE77C0087DB6A /* Main.storyboard in Resources */,
 				BE08A262230BE8B60087DB6A /* loginStoryboard.storyboard in Resources */,
+				BEEC09F323123F13002C9C10 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +247,7 @@
 				BECA3173230FDACE00457C7E /* Data.swift in Sources */,
 				BECA3171230FCEBD00457C7E /* fuyasuViewController.swift in Sources */,
 				BEC9A69F23112DB30049D896 /* TableViewController.swift in Sources */,
+				BEEC09F12312363F002C9C10 /* HowToViewController.swift in Sources */,
 				BE08A252230BE77C0087DB6A /* ViewController.swift in Sources */,
 				BE08A250230BE77C0087DB6A /* AppDelegate.swift in Sources */,
 				BEE00990230E7A2200464B43 /* loginViewController.swift in Sources */,

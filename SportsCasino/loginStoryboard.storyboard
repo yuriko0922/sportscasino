@@ -433,10 +433,10 @@
             </objects>
             <point key="canvasLocation" x="5857.5" y="1571.8309859154929"/>
         </scene>
-        <!--View Controller-->
+        <!--How To View Controller-->
         <scene sceneID="ARe-j4-CSw">
             <objects>
-                <viewController id="JWL-4u-hV4" sceneMemberID="viewController">
+                <viewController id="JWL-4u-hV4" customClass="HowToViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fQm-NC-Rb8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -447,35 +447,32 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxC-b1-wCE">
-                                <rect key="frame" x="20" y="144" width="280" height="406"/>
-                                <string key="text">・SportsCasinoは好きな試合にポイントを賭けて遊ぶゲームです。
-・クレジットカードを登録し、ポイントを購入します。
-・ポイントは1万円で1ポイントとなります。
-・試合情報から賭けてみたい試合を選択し、賭けたいポイント数を入力して賭けます。
-・賭けポイントは1ポイントからになります。
-・勝ったチーム（個人競技の場合は選手）に賭けたポイントが増えます。これをあたりと呼びます。
-・当たると、当たった総ポイントから10%引かれたポイントが取り分となります。
-・会員登録をすると1ゲーム参加につき、0.1ポイントが付与されます。</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="86g-Lr-Aw7">
+                                <rect key="frame" x="20" y="134" width="280" height="385"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kxC-b1-wCE" firstAttribute="top" secondItem="beA-90-MxU" secondAttribute="bottom" constant="20" id="987-Nv-UUY"/>
-                            <constraint firstItem="oAA-Mr-DKx" firstAttribute="trailing" secondItem="kxC-b1-wCE" secondAttribute="trailing" constant="20" id="RVF-XI-7dT"/>
+                            <constraint firstItem="oAA-Mr-DKx" firstAttribute="trailing" secondItem="86g-Lr-Aw7" secondAttribute="trailing" constant="20" id="8Ci-es-VpS"/>
+                            <constraint firstItem="86g-Lr-Aw7" firstAttribute="top" secondItem="beA-90-MxU" secondAttribute="bottom" constant="10" id="CM6-l4-GHA"/>
+                            <constraint firstItem="oAA-Mr-DKx" firstAttribute="bottom" secondItem="86g-Lr-Aw7" secondAttribute="bottom" id="LZ6-fx-YCB"/>
                             <constraint firstItem="beA-90-MxU" firstAttribute="top" secondItem="oAA-Mr-DKx" secondAttribute="top" constant="30" id="SUo-ap-94a"/>
                             <constraint firstItem="beA-90-MxU" firstAttribute="centerX" secondItem="fQm-NC-Rb8" secondAttribute="centerX" id="akT-Xi-hea"/>
-                            <constraint firstItem="kxC-b1-wCE" firstAttribute="leading" secondItem="oAA-Mr-DKx" secondAttribute="leading" constant="20" id="m2M-DZ-c2E"/>
+                            <constraint firstItem="86g-Lr-Aw7" firstAttribute="leading" secondItem="oAA-Mr-DKx" secondAttribute="leading" constant="20" id="zLB-VM-CuR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oAA-Mr-DKx"/>
                     </view>
+                    <connections>
+                        <outlet property="howToText" destination="86g-Lr-Aw7" id="JwZ-fk-Btu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XF-wH-6wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4884" y="2314"/>
+            <point key="canvasLocation" x="4882.5" y="2313.3802816901407"/>
         </scene>
         <!--ポイント-->
         <scene sceneID="eRt-aC-kkf">
@@ -502,7 +499,7 @@
             </objects>
             <point key="canvasLocation" x="2677.5" y="-465.84507042253523"/>
         </scene>
-        <!--Table View Controller-->
+        <!--マイページ-->
         <scene sceneID="ail-UU-GHY">
             <objects>
                 <tableViewController id="Lwy-Ib-zsQ" customClass="TableViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
@@ -518,6 +515,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -525,7 +523,7 @@
                             <outlet property="delegate" destination="Lwy-Ib-zsQ" id="KBv-VH-yMa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ybj-24-KRO"/>
+                    <navigationItem key="navigationItem" title="マイページ" id="Ybj-24-KRO"/>
                     <connections>
                         <segue destination="JWL-4u-hV4" kind="show" identifier="howTo" id="aIq-m2-9tz"/>
                         <segue destination="ozd-rO-LOu" kind="show" identifier="settei" id="qsN-bM-tlC"/>
@@ -536,15 +534,21 @@
             </objects>
             <point key="canvasLocation" x="4513" y="1323"/>
         </scene>
-        <!--Item-->
+        <!--マイページ-->
         <scene sceneID="N8Q-1c-rJS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hHw-gz-7Fc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="O5L-Em-UUR"/>
+                    <tabBarItem key="tabBarItem" title="マイページ" image="icons8-boy-50" id="O5L-Em-UUR">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="4"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J64-JF-xdw">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -557,6 +561,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icons8-boy-50" width="50" height="50"/>
         <image name="icons8-financial-success-50" width="50" height="50"/>
         <image name="icons8-home-50" width="50" height="50"/>
         <image name="icons8-leaderboard-50" width="50" height="50"/>

@@ -1,4 +1,4 @@
-# Uncomment the next line to define a global platform for your project
+#Uncomment the next line to define a global platform for your project
  platform :ios, '9.0'
 
 target 'SportsCasino' do
@@ -6,6 +6,10 @@ target 'SportsCasino' do
   use_frameworks!
 
   # Pods for SportsCasino
-pod 'IQKeyboardManagerSwift'
-pod 'IBAnimatable'
+  pod 'IQKeyboardManagerSwift'
+  pod 'IBAnimatable'
+  pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+
 end
