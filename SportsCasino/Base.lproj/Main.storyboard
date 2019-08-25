@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス又は電話番号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-Mv-1eu">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="uuuuu@gmail.com" borderStyle="roundedRect" placeholder="メールアドレス又は電話番号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-Mv-1eu">
                                 <rect key="frame" x="35" y="296" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="UI9-wL-JFk"/>
@@ -32,14 +32,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3Y-gb-RDy">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2819Yuriko" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3Y-gb-RDy">
                                 <rect key="frame" x="35" y="366" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="ebY-qh-knK"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYa-oX-bnR">
                                 <rect key="frame" x="126" y="411" width="68" height="33"/>
@@ -47,6 +47,10 @@
                                 <state key="normal" title="ログイン">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createUser:" destination="cti-Yb-v2n" eventType="touchUpInside" id="nwn-Zq-8vY"/>
+                                    <action selector="userLogin:" destination="cti-Yb-v2n" eventType="touchUpInside" id="nuH-cy-Wwy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB1-fm-U7L">
                                 <rect key="frame" x="78" y="482" width="164" height="36"/>
@@ -54,6 +58,9 @@
                                 <state key="normal" title="新規登録はこちら">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createUser:" destination="cti-Yb-v2n" eventType="touchUpInside" id="ejX-mZ-A94"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SportsCasinoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-rU-C6L">
                                 <rect key="frame" x="60" y="50" width="200" height="200"/>
@@ -79,6 +86,10 @@
                         <viewLayoutGuide key="safeArea" id="o2L-ru-acN"/>
                     </view>
                     <navigationItem key="navigationItem" id="X0z-Bd-uwH"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Fms-Mv-1eu" id="1Pj-RC-o1O"/>
+                        <outlet property="passwordTextFiled" destination="A3Y-gb-RDy" id="4rm-fS-MSn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PIS-Vm-4Pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

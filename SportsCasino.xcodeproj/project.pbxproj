@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EABAA7C9F408F073760E69B /* Pods_SportsCasino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDAB180AD9306DBA12C3C622 /* Pods_SportsCasino.framework */; };
+		3EABAA7C9F408F073760E69B /* Pods_SportsCasino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDAB180AD9306DBA12C3C622 /* Pods_SportsCasino.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		BE08A250230BE77C0087DB6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08A24F230BE77C0087DB6A /* AppDelegate.swift */; };
 		BE08A252230BE77C0087DB6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08A251230BE77C0087DB6A /* ViewController.swift */; };
 		BE08A255230BE77C0087DB6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE08A253230BE77C0087DB6A /* Main.storyboard */; };
@@ -16,6 +16,7 @@
 		BE08A262230BE8B60087DB6A /* loginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE08A261230BE8B60087DB6A /* loginStoryboard.storyboard */; };
 		BE08A264230C06B20087DB6A /* K Gothic in Resources */ = {isa = PBXBuildFile; fileRef = BE08A263230C06B20087DB6A /* K Gothic */; };
 		BE08A266230C07A30087DB6A /* Amana in Resources */ = {isa = PBXBuildFile; fileRef = BE08A265230C07A30087DB6A /* Amana */; };
+		BE81DEF32312662E00CDD483 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE81DEF22312662D00CDD483 /* GoogleService-Info.plist */; };
 		BEC9A69F23112DB30049D896 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9A69E23112DB30049D896 /* TableViewController.swift */; };
 		BEC9A6A1231134D80049D896 /* TableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9A6A0231134D80049D896 /* TableViewController2.swift */; };
 		BECA316F230FCA7700457C7E /* uketoriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA316E230FCA7700457C7E /* uketoriViewController.swift */; };
@@ -24,21 +25,21 @@
 		BECA3175230FDC7900457C7E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3174230FDC7900457C7E /* Alert.swift */; };
 		BEE00990230E7A2200464B43 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0098F230E7A2200464B43 /* loginViewController.swift */; };
 		BEEC09F12312363F002C9C10 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC09F02312363F002C9C10 /* HowToViewController.swift */; };
-		BEEC09F323123F13002C9C10 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = BEEC09F223123F12002C9C10 /* GoogleService-Info (1).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD29E24CA7932BBF1E5C80F0 /* Pods-SportsCasino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsCasino.debug.xcconfig"; path = "Target Support Files/Pods-SportsCasino/Pods-SportsCasino.debug.xcconfig"; sourceTree = "<group>"; };
+		BE07F8682312675D00AA355D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE08A24C230BE77C0087DB6A /* SportsCasino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsCasino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE08A24F230BE77C0087DB6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE08A251230BE77C0087DB6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE08A254230BE77C0087DB6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE08A256230BE77F0087DB6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE08A259230BE77F0087DB6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BE08A25B230BE77F0087DB6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE08A261230BE8B60087DB6A /* loginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = loginStoryboard.storyboard; sourceTree = "<group>"; };
 		BE08A263230C06B20087DB6A /* K Gothic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "K Gothic"; sourceTree = "<group>"; };
 		BE08A265230C07A30087DB6A /* Amana */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Amana; sourceTree = "<group>"; };
+		BE81DEF22312662D00CDD483 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEC9A69E23112DB30049D896 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BEC9A6A0231134D80049D896 /* TableViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController2.swift; sourceTree = "<group>"; };
 		BECA316E230FCA7700457C7E /* uketoriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uketoriViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		BECA3174230FDC7900457C7E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BEE0098F230E7A2200464B43 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		BEEC09F02312363F002C9C10 /* HowToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
-		BEEC09F223123F12002C9C10 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		EDAB180AD9306DBA12C3C622 /* Pods_SportsCasino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsCasino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC1D8E5B6B1C44F8068F47F /* Pods-SportsCasino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsCasino.release.xcconfig"; path = "Target Support Files/Pods-SportsCasino/Pods-SportsCasino.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +102,8 @@
 		BE08A24E230BE77C0087DB6A /* SportsCasino */ = {
 			isa = PBXGroup;
 			children = (
+				BE07F8682312675D00AA355D /* Info.plist */,
+				BE81DEF22312662D00CDD483 /* GoogleService-Info.plist */,
 				BE08A24F230BE77C0087DB6A /* AppDelegate.swift */,
 				BE08A251230BE77C0087DB6A /* ViewController.swift */,
 				BE08A253230BE77C0087DB6A /* Main.storyboard */,
@@ -109,7 +111,6 @@
 				BE08A258230BE77F0087DB6A /* LaunchScreen.storyboard */,
 				BEE0098F230E7A2200464B43 /* loginViewController.swift */,
 				BECA3174230FDC7900457C7E /* Alert.swift */,
-				BE08A25B230BE77F0087DB6A /* Info.plist */,
 				BE08A265230C07A30087DB6A /* Amana */,
 				BE08A263230C06B20087DB6A /* K Gothic */,
 				BE08A261230BE8B60087DB6A /* loginStoryboard.storyboard */,
@@ -119,7 +120,6 @@
 				BEC9A69E23112DB30049D896 /* TableViewController.swift */,
 				BEC9A6A0231134D80049D896 /* TableViewController2.swift */,
 				BEEC09F02312363F002C9C10 /* HowToViewController.swift */,
-				BEEC09F223123F12002C9C10 /* GoogleService-Info (1).plist */,
 			);
 			path = SportsCasino;
 			sourceTree = "<group>";
@@ -185,12 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE08A264230C06B20087DB6A /* K Gothic in Resources */,
+				BE81DEF32312662E00CDD483 /* GoogleService-Info.plist in Resources */,
 				BE08A25A230BE77F0087DB6A /* LaunchScreen.storyboard in Resources */,
 				BE08A257230BE77F0087DB6A /* Assets.xcassets in Resources */,
 				BE08A266230C07A30087DB6A /* Amana in Resources */,
 				BE08A255230BE77C0087DB6A /* Main.storyboard in Resources */,
 				BE08A262230BE8B60087DB6A /* loginStoryboard.storyboard in Resources */,
-				BEEC09F323123F13002C9C10 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

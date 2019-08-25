@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SportsCasino/loginViewController.swift"
-            timestampString = "588397184.1948529"
+            filePath = "SportsCasino/ViewController.swift"
+            timestampString = "588417649.524784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "viewWillAppear(_:)"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "createUser(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,121 +25,62 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SportsCasino/TableViewController.swift"
-            timestampString = "588397184.195419"
+            filePath = "SportsCasino/ViewController.swift"
+            timestampString = "588417649.524892"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "TableViewController"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "createUser(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SportsCasino/ViewController.swift"
+            timestampString = "588417649.524953"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "ViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SportsCasino.TableViewController.name.getter : Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "SportsCasino"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/TableViewController.swift"
-                  timestampString = "588332302.906608"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "114">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SportsCasino.TableViewController.name.setter : Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "SportsCasino"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/TableViewController.swift"
-                  timestampString = "588332302.9085211"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "128">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SportsCasino.TableViewController.name.modify : Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "SportsCasino"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/TableViewController.swift"
-                  timestampString = "588332302.910437"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SportsCasino.TableViewController.name.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "SportsCasino"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/TableViewController.swift"
-                  timestampString = "588332302.916597"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SportsCasino.TableViewController.init(style: __C.UITableViewStyle) -&gt; SportsCasino.TableViewController"
-                  moduleName = "SportsCasino"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/TableViewController.swift"
-                  timestampString = "588332302.92092"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "37">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SportsCasino.TableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SportsCasino.TableViewController"
-                  moduleName = "SportsCasino"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/TableViewController.swift"
-                  timestampString = "588332302.923138"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "180">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SportsCasino.TableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SportsCasino.TableViewController&gt;"
-                  moduleName = "SportsCasino"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/TableViewController.swift"
-                  timestampString = "588332302.925332"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "110">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SportsCasino/ViewController.swift"
+            timestampString = "588417649.5250109"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "userLogin(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SportsCasino/ViewController.swift"
+            timestampString = "588417649.525067"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "userLogin(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
