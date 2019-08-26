@@ -324,35 +324,208 @@
             </objects>
             <point key="canvasLocation" x="5857.5" y="6.3380281690140849"/>
         </scene>
-        <!--ホーム-->
+        <!--試合-->
         <scene sceneID="SVs-mn-bVh">
             <objects>
-                <viewController id="XVQ-rx-r6T" sceneMemberID="viewController">
+                <viewController id="XVQ-rx-r6T" customClass="GameViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O5C-Pq-BPn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llc-bZ-CAU">
-                                <rect key="frame" x="68" y="220" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P4h-AG-M6C">
+                                <rect key="frame" x="5" y="110" width="310" height="28"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M0S-22-MPr">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="F0a-id-F21"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="win"/>
+                                            <segment title="lose"/>
+                                            <segment title="draw"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="bairitu1:" destination="XVQ-rx-r6T" eventType="valueChanged" id="uaC-Ha-Tri"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="x06-O2-GDX">
+                                        <rect key="frame" x="160" y="0.0" width="150" height="29"/>
+                                        <segments>
+                                            <segment title="win"/>
+                                            <segment title="lose"/>
+                                            <segment title="draw"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="bairitu5:" destination="XVQ-rx-r6T" eventType="valueChanged" id="Cp0-ua-ToN"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAz-Bd-heD">
+                                <rect key="frame" x="137" y="198.5" width="46" height="30"/>
+                                <state key="normal" title="ベット"/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-ex-t0I">
+                                <rect key="frame" x="5" y="358.5" width="310" height="28"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O04-K4-fqO">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="kJn-MD-DD1"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="win"/>
+                                            <segment title="lose"/>
+                                            <segment title="draw"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="bairitu3:" destination="XVQ-rx-r6T" eventType="valueChanged" id="rUD-WJ-Bh2"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wvK-zz-hi1">
+                                        <rect key="frame" x="160" y="0.0" width="150" height="29"/>
+                                        <segments>
+                                            <segment title="win"/>
+                                            <segment title="lose"/>
+                                            <segment title="draw"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="bairitu4:" destination="XVQ-rx-r6T" eventType="valueChanged" id="AOS-DK-b02"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="倍率" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lds-Aw-F6g">
+                                <rect key="frame" x="10" y="158" width="300" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiG-dE-frw">
+                                <rect key="frame" x="10" y="406.5" width="300" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E39-f0-c5U">
+                                <rect key="frame" x="137" y="447" width="46" height="30"/>
+                                <state key="normal" title="ベット"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="試合情報" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXU-T2-5Vh">
+                                <rect key="frame" x="130" y="30" width="180" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-CI-J7P">
+                                <rect key="frame" x="20" y="30" width="100" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaT-0y-vjQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdr-hi-9zR">
+                                        <rect key="frame" x="0.0" y="40" width="100" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UNJ-lW-Tce"/>
+                                    <constraint firstAttribute="height" constant="70" id="Y5e-Ns-ZaL"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="3Ny-Kg-HZe">
+                                <rect key="frame" x="20" y="278.5" width="100" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-FF-09V">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSe-9B-eJr">
+                                        <rect key="frame" x="0.0" y="40.5" width="100" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="nEB-LK-A44"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cih-Qa-Xdd">
+                                <rect key="frame" x="130" y="278.5" width="180" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="yIV-Oz-RHu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EXU-T2-5Vh" firstAttribute="top" secondItem="3fL-GL-wed" secondAttribute="top" constant="10" id="0Er-1V-pSX"/>
+                            <constraint firstItem="HAz-Bd-heD" firstAttribute="top" secondItem="Lds-Aw-F6g" secondAttribute="bottom" constant="20" id="46I-2D-VoJ"/>
+                            <constraint firstItem="Tfw-CI-J7P" firstAttribute="top" secondItem="3fL-GL-wed" secondAttribute="top" constant="10" id="6fX-J8-MH9"/>
+                            <constraint firstItem="M1S-ex-t0I" firstAttribute="centerX" secondItem="O5C-Pq-BPn" secondAttribute="centerX" id="9CG-Vf-Zfa"/>
+                            <constraint firstItem="3Ny-Kg-HZe" firstAttribute="leading" secondItem="3fL-GL-wed" secondAttribute="leading" constant="20" id="9NU-GW-Urj"/>
+                            <constraint firstItem="Lds-Aw-F6g" firstAttribute="top" secondItem="P4h-AG-M6C" secondAttribute="bottom" constant="20" id="ALW-ky-bGP"/>
+                            <constraint firstItem="3Ny-Kg-HZe" firstAttribute="top" secondItem="Lds-Aw-F6g" secondAttribute="bottom" constant="100" id="EBM-8y-m1Q"/>
+                            <constraint firstItem="Lds-Aw-F6g" firstAttribute="leading" secondItem="3fL-GL-wed" secondAttribute="leading" constant="10" id="G6j-Bb-b9S"/>
+                            <constraint firstItem="E39-f0-c5U" firstAttribute="centerX" secondItem="O5C-Pq-BPn" secondAttribute="centerX" id="IZb-1n-Gsw"/>
+                            <constraint firstItem="Tfw-CI-J7P" firstAttribute="leading" secondItem="3fL-GL-wed" secondAttribute="leading" constant="20" id="Ihe-3B-TEi"/>
+                            <constraint firstItem="P4h-AG-M6C" firstAttribute="top" secondItem="Tfw-CI-J7P" secondAttribute="bottom" constant="10" id="KeS-oX-vUS"/>
+                            <constraint firstItem="cih-Qa-Xdd" firstAttribute="top" secondItem="Lds-Aw-F6g" secondAttribute="bottom" constant="100" id="Lsn-Pw-SFT"/>
+                            <constraint firstItem="AiG-dE-frw" firstAttribute="leading" secondItem="3fL-GL-wed" secondAttribute="leading" constant="10" id="Rbu-ih-TkP"/>
+                            <constraint firstItem="M1S-ex-t0I" firstAttribute="top" secondItem="cih-Qa-Xdd" secondAttribute="bottom" constant="10" id="Swu-Ml-5a1"/>
+                            <constraint firstItem="EXU-T2-5Vh" firstAttribute="leading" secondItem="Tfw-CI-J7P" secondAttribute="trailing" constant="10" id="ZeN-NK-Q5r"/>
+                            <constraint firstItem="cih-Qa-Xdd" firstAttribute="leading" secondItem="3Ny-Kg-HZe" secondAttribute="trailing" constant="10" id="bls-De-qzx"/>
+                            <constraint firstItem="P4h-AG-M6C" firstAttribute="top" secondItem="EXU-T2-5Vh" secondAttribute="bottom" constant="10" id="cl2-Wl-StC"/>
+                            <constraint firstItem="E39-f0-c5U" firstAttribute="top" secondItem="AiG-dE-frw" secondAttribute="bottom" constant="20" id="mHP-52-Jcx"/>
+                            <constraint firstItem="P4h-AG-M6C" firstAttribute="centerX" secondItem="O5C-Pq-BPn" secondAttribute="centerX" id="ngb-9A-t4r"/>
+                            <constraint firstItem="3fL-GL-wed" firstAttribute="trailing" secondItem="cih-Qa-Xdd" secondAttribute="trailing" constant="10" id="ofC-LQ-VjC"/>
+                            <constraint firstItem="M1S-ex-t0I" firstAttribute="top" secondItem="3Ny-Kg-HZe" secondAttribute="bottom" constant="20" id="paT-he-4h8"/>
+                            <constraint firstItem="HAz-Bd-heD" firstAttribute="centerX" secondItem="O5C-Pq-BPn" secondAttribute="centerX" id="sZg-ES-4XT"/>
+                            <constraint firstItem="3fL-GL-wed" firstAttribute="trailing" secondItem="AiG-dE-frw" secondAttribute="trailing" constant="10" id="vW9-hL-7Zu"/>
+                            <constraint firstItem="3fL-GL-wed" firstAttribute="trailing" secondItem="EXU-T2-5Vh" secondAttribute="trailing" constant="10" id="wZV-5N-bw8"/>
+                            <constraint firstItem="AiG-dE-frw" firstAttribute="top" secondItem="M1S-ex-t0I" secondAttribute="bottom" constant="20" id="wek-ks-i7C"/>
+                            <constraint firstItem="3fL-GL-wed" firstAttribute="trailing" secondItem="Lds-Aw-F6g" secondAttribute="trailing" constant="10" id="zbs-1H-Cgs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3fL-GL-wed"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ホーム" image="icons8-home-50" id="1RG-A7-xIm">
+                    <tabBarItem key="tabBarItem" title="試合" image="icons8-leaderboard-50" id="1RG-A7-xIm">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="4"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="bairitu2" destination="x06-O2-GDX" id="w8n-yy-WuY"/>
+                        <outlet property="bairitu6" destination="M0S-22-MPr" id="Mjj-Ev-ygF"/>
+                        <outlet property="bairitu7" destination="O04-K4-fqO" id="OZ9-pt-cke"/>
+                        <outlet property="bairitu8" destination="wvK-zz-hi1" id="5Xp-Lu-FPe"/>
+                        <outlet property="bairituLabel" destination="Lds-Aw-F6g" id="uCv-8N-jfq"/>
+                        <outlet property="bairituLabel2" destination="AiG-dE-frw" id="q20-qB-6lm"/>
+                        <outlet property="dayLabel1" destination="qaT-0y-vjQ" id="qMj-bu-LGH"/>
+                        <outlet property="dayLabel2" destination="d9k-FF-09V" id="Iyb-k5-oED"/>
+                        <outlet property="teamLabel1" destination="EXU-T2-5Vh" id="mNr-0T-MK2"/>
+                        <outlet property="teamLabel2" destination="cih-Qa-Xdd" id="dr5-Td-cP6"/>
+                        <outlet property="timeLabel1" destination="Jdr-hi-9zR" id="gGr-wd-xnz"/>
+                        <outlet property="timeLabel2" destination="mSe-9B-eJr" id="cSH-jp-2W5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Si-ec-V3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673" y="2084"/>
+            <point key="canvasLocation" x="1672.5" y="2082.0422535211269"/>
         </scene>
-        <!--試合-->
+        <!--結果-->
         <scene sceneID="Gdv-rH-Ahh">
             <objects>
-                <viewController id="rRR-qq-lQw" customClass="GameViewController" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rRR-qq-lQw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="foX-cX-2Od">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,7 +546,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Nb7-vb-ccN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="試合" image="icons8-leaderboard-50" id="ymf-Wq-eTA">
+                    <tabBarItem key="tabBarItem" title="結果" image="icons8-leaderboard-50" id="ymf-Wq-eTA">
                         <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
                 </viewController>
@@ -584,7 +757,6 @@
     <resources>
         <image name="icons8-boy-50" width="50" height="50"/>
         <image name="icons8-financial-success-50" width="50" height="50"/>
-        <image name="icons8-home-50" width="50" height="50"/>
         <image name="icons8-leaderboard-50" width="50" height="50"/>
     </resources>
 </document>
