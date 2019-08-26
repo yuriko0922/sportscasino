@@ -65,7 +65,7 @@ class ViewController: UIViewController {
                 // 認証成功
                 print("ログイン成功")
                 
-//   遷移
+                //   遷移
                 self.toHome()
             }
         })
@@ -84,7 +84,7 @@ class ViewController: UIViewController {
     // タブバーコントローラーの画面に遷移
     func toHome() {
         // storyboardのfileの特定
-        let storyboard: UIStoryboard = UIStoryboard(name: "login", bundle: nil)
+        let storyboard: UIStoryboard = UIStoryboard(name: "loginStoryboard", bundle: nil)
         // 移動先のvcをインスタンス化
         let vc = storyboard.instantiateViewController(withIdentifier: "login")
         // 遷移処理

@@ -16,6 +16,7 @@
 		BE08A262230BE8B60087DB6A /* loginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE08A261230BE8B60087DB6A /* loginStoryboard.storyboard */; };
 		BE08A264230C06B20087DB6A /* K Gothic in Resources */ = {isa = PBXBuildFile; fileRef = BE08A263230C06B20087DB6A /* K Gothic */; };
 		BE08A266230C07A30087DB6A /* Amana in Resources */ = {isa = PBXBuildFile; fileRef = BE08A265230C07A30087DB6A /* Amana */; };
+		BE35D2B02313946100D649F2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35D2AF2313946100D649F2 /* GameViewController.swift */; };
 		BE81DEF32312662E00CDD483 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE81DEF22312662D00CDD483 /* GoogleService-Info.plist */; };
 		BEC9A69F23112DB30049D896 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9A69E23112DB30049D896 /* TableViewController.swift */; };
 		BEC9A6A1231134D80049D896 /* TableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9A6A0231134D80049D896 /* TableViewController2.swift */; };
@@ -39,6 +40,7 @@
 		BE08A261230BE8B60087DB6A /* loginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = loginStoryboard.storyboard; sourceTree = "<group>"; };
 		BE08A263230C06B20087DB6A /* K Gothic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "K Gothic"; sourceTree = "<group>"; };
 		BE08A265230C07A30087DB6A /* Amana */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Amana; sourceTree = "<group>"; };
+		BE35D2AF2313946100D649F2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BE81DEF22312662D00CDD483 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEC9A69E23112DB30049D896 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BEC9A6A0231134D80049D896 /* TableViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController2.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				BEC9A69E23112DB30049D896 /* TableViewController.swift */,
 				BEC9A6A0231134D80049D896 /* TableViewController2.swift */,
 				BEEC09F02312363F002C9C10 /* HowToViewController.swift */,
+				BE35D2AF2313946100D649F2 /* GameViewController.swift */,
 			);
 			path = SportsCasino;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				BE08A250230BE77C0087DB6A /* AppDelegate.swift in Sources */,
 				BEE00990230E7A2200464B43 /* loginViewController.swift in Sources */,
 				BECA3175230FDC7900457C7E /* Alert.swift in Sources */,
+				BE35D2B02313946100D649F2 /* GameViewController.swift in Sources */,
 				BEC9A6A1231134D80049D896 /* TableViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
