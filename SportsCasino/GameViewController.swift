@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import Himotoki
 
 
 
 class GameViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,14 @@ class GameViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+   
+   
+    
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -30,4 +37,5 @@ class GameViewController: UIViewController {
     }
     */
 
-}
+
+

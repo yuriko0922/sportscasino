@@ -14,4 +14,5 @@ target 'SportsCasino' do
   pod 'Firebase/Firestore'
   pod "Himotoki", "~> 3.1"
   pod 'APIKit', '~> 5.0'
+  pod 'Kanna'
 end

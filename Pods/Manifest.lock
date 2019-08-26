@@ -115,6 +115,7 @@ PODS:
   - Himotoki (3.2.0)
   - IBAnimatable (6.0.0)
   - IQKeyboardManagerSwift (6.4.1)
+  - Kanna (5.0.0)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -132,6 +133,7 @@ DEPENDENCIES:
   - Himotoki (~> 3.1)
   - IBAnimatable
   - IQKeyboardManagerSwift
+  - Kanna
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -156,6 +158,7 @@ SPEC REPOS:
     - Himotoki
     - IBAnimatable
     - IQKeyboardManagerSwift
+    - Kanna
     - leveldb-library
     - nanopb
     - Protobuf
@@ -182,10 +185,11 @@ SPEC CHECKSUMS:
   Himotoki: 2618fc6b939ad6d9b71c52c90fe210f54ea28167
   IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
   IQKeyboardManagerSwift: d2df660d0b8d64a15cb2537c9ff303213fa515b2
+  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
 
-PODFILE CHECKSUM: df17b0981a4cfc73999876e274076463db3a63c4
+PODFILE CHECKSUM: e1bb7ffd678b15bcd6ce878fcfaf284823b6ecfa
 
 COCOAPODS: 1.7.5
