@@ -9,24 +9,52 @@
 import UIKit
 
 class BetViewController: UIViewController {
-
+    // 賭けたポイントの値
+var betNum = 0
+    let singleton :Singleton = Singleton.shered
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     // 賭けるポイント表示されるラベル
-    @IBOutlet weak var betPointLabel: UIStackView!
+    
+    @IBOutlet weak var betPointLabel: UILabel!
+    
     // 賭けるポイント1プラスされるボタン
     @IBAction func betPuls1Bottun(_ sender: UIButton) {
+        betNum += 1
+        betPointLabel.text = "\(betNum)"
     }
     // 賭けるポイント10プラスされるボタン
     @IBAction func betPuls10Bottun(_ sender: UIButton) {
+        betNum += 10
+        betPointLabel.text = "\(betNum)"
     }
     // 賭けるポイント100プラスされるボタン
     @IBAction func betPuls100Bottun(_ sender: UIButton) {
+        betNum += 100
+        betPointLabel.text = "\(betNum)"
     }
     
+    @IBAction func betBottun3(_ sender: UIButton) {
+        if betNum == 0 {
+            showAlert(message: "ポイントを選択してください")
+        } else {
+            // textfiledの内容取得
+            betPointLabel.text = "\(betNum)"
+            // 現在のポイントに反映させる
+            singleton.saveNowPoint(nowPoint: singleton.getNowPoint() - betNum)
+            // 入力した数のアラート出させる
+            showAlert(message: "\(betNum)P BETしました")
+            // リセット
+            // 数字をリセット
+            betNum = 0
+            // ラベルに表示される文字列もリセット
+            
+            betPointLabel.text = "0"
+        }
+    }
     /*
     // MARK: - Navigation
 
