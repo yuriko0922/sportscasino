@@ -21,6 +21,8 @@ class Data {
     init(nowPoint: Int, textFieldNum: Int) {
         self.nowPoint = nowPoint
         self.textFieldNum = textFieldNum
+        
+        
     }
 }
 // singleton

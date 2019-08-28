@@ -10,8 +10,6 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-   // let finishTime = 
-    @IBOutlet weak var nowTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +22,7 @@ class ResultViewController: UIViewController {
         
         print(dateFormatter.string(from: dt))
         // とりあえずテストで現在の日時取得してみた dateFormatter.string(from: dt)
-        nowTimeLabel.text = dateFormatter.string(from: dt)
+        //nowTimeLabel.text = dateFormatter.string(from: dt)
     }
     
     

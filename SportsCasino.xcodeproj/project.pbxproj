@@ -27,6 +27,7 @@
 		BECA3173230FDACE00457C7E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3172230FDACE00457C7E /* Data.swift */; };
 		BECA3175230FDC7900457C7E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3174230FDC7900457C7E /* Alert.swift */; };
 		BEE00990230E7A2200464B43 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0098F230E7A2200464B43 /* loginViewController.swift */; };
+		BEEA2845231693F10006F44C /* ResultViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA2844231693F10006F44C /* ResultViewController2.swift */; };
 		BEEC09F12312363F002C9C10 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC09F02312363F002C9C10 /* HowToViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		BECA3172230FDACE00457C7E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		BECA3174230FDC7900457C7E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BEE0098F230E7A2200464B43 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		BEEA2844231693F10006F44C /* ResultViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController2.swift; sourceTree = "<group>"; };
 		BEEC09F02312363F002C9C10 /* HowToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
 		EDAB180AD9306DBA12C3C622 /* Pods_SportsCasino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsCasino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC1D8E5B6B1C44F8068F47F /* Pods-SportsCasino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsCasino.release.xcconfig"; path = "Target Support Files/Pods-SportsCasino/Pods-SportsCasino.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				BEC9A6A0231134D80049D896 /* TableViewController2.swift */,
 				BEEC09F02312363F002C9C10 /* HowToViewController.swift */,
 				BE35D2B12313B84A00D649F2 /* GameViewController.swift */,
+				BEEA2844231693F10006F44C /* ResultViewController2.swift */,
 				BE35D2B323150C0B00D649F2 /* BetViewController.swift */,
 				BE1CA7032316102F0033F4E8 /* ResultViewController.swift */,
 			);
@@ -264,6 +267,7 @@
 				BE35D2B423150C0B00D649F2 /* BetViewController.swift in Sources */,
 				BECA3175230FDC7900457C7E /* Alert.swift in Sources */,
 				BE35D2B22313B84A00D649F2 /* GameViewController.swift in Sources */,
+				BEEA2845231693F10006F44C /* ResultViewController2.swift in Sources */,
 				BEC9A6A1231134D80049D896 /* TableViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
