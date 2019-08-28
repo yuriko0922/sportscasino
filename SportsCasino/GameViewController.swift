@@ -18,6 +18,20 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let scrollView = UIScrollView()
+        
+        //scrollViewの大きさを設定。
+        scrollView.frame = self.view.frame
+        
+        //スクロール領域の設定
+        scrollView.contentSize = CGSize(width:self.view.frame.width, height:1000)
+        
+        //scrollViewをviewのSubViewとして追加
+        self.view.addSubview(scrollView)
+        
+        
+        
+        
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ja_JP")
         dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
@@ -158,6 +172,8 @@ class GameViewController: UIViewController {
         // かける画面に遷移
         performSegue(withIdentifier: "bet", sender: nil)
     }
+    
+    
 }
 
 
