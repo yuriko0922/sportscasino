@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMZ-OT-yYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4860" y="-704.57746478873241"/>
+            <point key="canvasLocation" x="5769.5652173913049" y="-705.13392857142856"/>
         </scene>
         <!--Fuyasu View Controller-->
         <scene sceneID="5Fu-1d-e1m">
@@ -612,9 +612,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVg-yA-pY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3831.884057971015" y="2489.7321428571427"/>
+            <point key="canvasLocation" x="3832" y="2484"/>
         </scene>
-        <!--結果-->
+        <!--Result View Controller2-->
         <scene sceneID="Gdv-rH-Ahh">
             <objects>
                 <viewController id="rRR-qq-lQw" customClass="ResultViewController2" customModule="SportsCasino" customModuleProvider="target" sceneMemberID="viewController">
@@ -637,9 +637,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nb7-vb-ccN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="結果" image="icons8-graph-50" id="ymf-Wq-eTA">
-                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="Vjc-Me-7A3"/>
                     <connections>
                         <segue destination="SBk-QM-Jmi" kind="show" identifier="ok" id="Ej0-uY-cXv"/>
                         <segue destination="1Nc-dk-cx4" kind="show" identifier="still" id="6m8-Qs-ym9"/>
@@ -647,7 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIY-9j-LVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2676.811594202899" y="-1154.4642857142856"/>
+            <point key="canvasLocation" x="3586.9565217391305" y="-1154.4642857142856"/>
         </scene>
         <!--Ok Result View Controller-->
         <scene sceneID="TEW-NE-ga2">
@@ -721,7 +719,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFf-pL-QzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3743.4782608695655" y="-1235.4910714285713"/>
+            <point key="canvasLocation" x="4653.623188405797" y="-1235.4910714285713"/>
         </scene>
         <!--Still Result View Controller-->
         <scene sceneID="SGX-uB-hqG">
@@ -762,7 +760,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="DeW-LP-MEq" kind="relationship" relationship="viewControllers" id="GQm-lA-rwP"/>
-                        <segue destination="rRR-qq-lQw" kind="relationship" relationship="viewControllers" id="c8W-r5-Hpu"/>
+                        <segue destination="Ihx-Uc-yIk" kind="relationship" relationship="viewControllers" id="c8W-r5-Hpu"/>
                         <segue destination="a3W-4H-mok" kind="relationship" relationship="viewControllers" id="gPm-Rh-UJv"/>
                         <segue destination="hHw-gz-7Fc" kind="relationship" relationship="viewControllers" id="TLG-Pr-PK6"/>
                     </connections>
@@ -983,6 +981,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWn-20-YJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--結果-->
+        <scene sceneID="Zrp-au-itx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ihx-Uc-yIk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="結果" image="icons8-graph-50" id="ymf-Wq-eTA">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pd0-iC-Kbn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rRR-qq-lQw" kind="relationship" relationship="rootViewController" id="pmx-eU-GNe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sG7-7j-hlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2676.811594202899" y="-1154.4642857142856"/>
         </scene>
     </scenes>
     <resources>

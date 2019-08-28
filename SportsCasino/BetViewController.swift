@@ -10,7 +10,7 @@ import UIKit
 
 class BetViewController: UIViewController {
     // 賭けたポイントの値
-var betNum = 0
+
     let singleton :Singleton = Singleton.shered
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ var betNum = 0
             showAlert(message: "\(betNum)P BETしました")
             // リセット
             // 数字をリセット
-            betNum = 0
+           // betNum = 0
             // ラベルに表示される文字列もリセット
             
             betPointLabel.text = "0"

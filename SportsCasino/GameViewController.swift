@@ -24,6 +24,7 @@ class GameViewController: UIViewController {
        let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ja_JP")
         dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
+       // dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 9)
         // 試合日時１
         let string = "2019-08-30T05:20:00Z"
@@ -38,17 +39,26 @@ class GameViewController: UIViewController {
         let myDateThird = dateFormatter.date(from: stringThird)!
         // 試合のいろんな情報
         dictionay = [
-            ["team": "アメリカ", "team2": "日本", "day": myDate, "rate": "\(self.matchRate)"],
+            ["team": "アメリカ", "team2": "日本", "day": myDate, "rate": "\(self.matchRate)", "win": "アメリカ"],
             ["team": "フランス", "team2": "イタリア", "day": myDateSecond, "rate": "\(self.matchRate)"],
             ["team": "ブラジル", "team2": "カナダ", "day": myDateThird, "rate": "\(self.matchRate)"]
         ]
         
+        let time1 = "\(dictionay[0]["day"] ?? "")"
+        let timePrefix1 = String(time1.prefix(19))
+        
+        let time2 = "\(dictionay[0]["day"] ?? "")"
+        let timePrefix2 = String(time1.prefix(19))
+        
+        let time3 = "\(dictionay[0]["day"] ?? "")"
+        let timePrefix3 = String(time1.prefix(19))
+        
         // 1番上の試合
-        dayLabel1.text = "\(dictionay[0]["day"] ?? "")"
+        dayLabel1.text = timePrefix1
         teamLabel1.text = "\(dictionay[0]["team"] ?? "")"
         teamLabel21.text = "\(dictionay[0]["team2"] ?? "")"
         // 2番目の試合
-        dayLabel2.text = "\(dictionay[1]["day"] ?? "")"
+        dayLabel2.text = timePrefix2
         teamLabel2.text = "\(dictionay[1]["team"] ?? "")"
         teamLabel22.text = "\(dictionay[1]["team2"] ?? "")"
     }
@@ -70,20 +80,27 @@ class GameViewController: UIViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             // bairituLabel.text = "\(dictionay[0]["rate"]!)"
-            bairituLabel.text = "50倍"
+            bairituLabel.text = "3倍"
             bairitu2.selectedSegmentIndex = 1
+            selectedCountry = ["アメリカ","フランス"]
+            print("**\(selectedCountry[0])")
             
         case 1:
             // bairituLabel.text = "\(dictionay[0]["rate"]!)"
             bairitu2.selectedSegmentIndex = 0
-            bairituLabel.text = "1.5倍"
+            bairituLabel.text = "60倍"
+            selectedCountry = ["日本","イタリア"]
+            print("**\(selectedCountry[0])")
+            // 日本イタリア
         case 2:
             //  bairituLabel.text = "\(dictionay[0]["rate"]!)"
             bairitu2.selectedSegmentIndex = 2
-            bairituLabel.text = "26.2倍"
+            bairituLabel.text = "37倍"
+            // 引き分け
         default:
             print("該当なし")
         }
+    
     }
     @IBOutlet weak var bairitu2: UISegmentedControl!
     // 勝ち負け選択のやつ右
@@ -92,15 +109,17 @@ class GameViewController: UIViewController {
         case 0:
             // bairituLabel.text = "\(dictionay[0]["rate"]!)"
             bairitu6.selectedSegmentIndex = 1
-            bairituLabel.text = "1.5倍"
+            bairituLabel.text = "60倍"
+           
         case 1:
             //  bairituLabel.text = "\(dictionay[0]["rate"]!)"
             bairitu6.selectedSegmentIndex = 0
-            bairituLabel.text = "50倍"
+            bairituLabel.text = "3倍"
+            
         case 2:
             // bairituLabel.text = "\(dictionay[0]["rate"]!)"
             bairitu6.selectedSegmentIndex = 2
-            bairituLabel.text = "26.2倍"
+            bairituLabel.text = "37倍"
         default:
             print("該当なし")
         }
@@ -165,5 +184,8 @@ class GameViewController: UIViewController {
     
 }
 
+
+var selectedCountry : [String] = []
+var selectedCountry2 : [String] = []
 
 
