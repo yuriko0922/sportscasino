@@ -9,18 +9,55 @@
 import UIKit
 
 
+/* class DateUtils {
+    class func dateFromString(string: String, format: String) -> Date {
+        let formatter: DateFormatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.dateFormat = format
+        return formatter.date(from: string)!
+    }
+    
+    class func stringFromDate(date: Date, format: String) -> String {
+        let formatter: DateFormatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.dateFormat = format
+        return formatter.string(from: date)
+    }
+}
+
+// 元の日付の文字列
+let dateString = "2018/08/29 05:00:00 +09:00"
+
+// NSDateに変換
+let date = DateUtils.dateFromString(string: dateString, format: "yyyy/MM/dd HH:mm:ss Z")
+print(date)
+// => "2015-03-04 03:34:56 +0000\n"
+
+// Stringに再変換
+print(DateUtils.stringFromDate(date: date, format: "yyyy年MM月dd日 HH時mm分ss秒 Z"))
+// => "2015年03月04日 12時34分56秒 +0900\n"
+ */
+
 
 class GameViewController: UIViewController {
     
     var matchRate = 2000
     
     
+//    myDateFormatter.dateFormat = "yyyy年M月d日 HH時mm分ss秒 Z"
+    
+//     var myDateFormatter = DateFormatter().date(from: "2019/08/29/ 12:05:00")
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         print(dictionay[1])
+        
+        
+        
         // 1番上の試合
         dayLabel1.text = "\(dictionay[0]["day"] ?? "")"
-        timeLabel1.text = "\(dictionay[0]["time"] ?? "")"
+        
         teamLabel1.text = "\(dictionay[0]["team"] ?? "")"
         teamLabel21.text = "\(dictionay[0]["team2"] ?? "")"
         // 2番目の試合
@@ -28,10 +65,27 @@ class GameViewController: UIViewController {
         timeLabel2.text = "\(dictionay[1]["time"] ?? "")"
         teamLabel2.text = "\(dictionay[1]["team"] ?? "")"
         teamLabel22.text = "\(dictionay[1]["team2"] ?? "")"
+        print(myDateFormatter)
+        
+        
+    
     }
+   
+
+    
+   var myDateFormatter = DateFormatter().date(from: "2019/08/29/ 12:05:00")
+    
+    
+   var myDateFormatter1 = DateFormatter().date(from: "2018年08月30日 05時00分00秒")
+    
+    
+  //  myDateFormatter.dateFormat = "yyyy年M月d日 HH時mm分ss秒"
+//    let day1:Date = myDateFormatter.date(from: "2018年11月29日")!
+ //   let day2:Date = myDateFormatter.date(from: "2018年12月2日")!
+   
     // 試合のいろんな情報
-    lazy var dictionay: [[String: String]] = [
-        ["team": "アメリカ", "team2": "日本", "day": "2019/08/28", "time":"12:05", "rate": "\(self.matchRate)"],
+    lazy var dictionay: [[String: Any]] = [
+        ["team": "アメリカ", "team2": "日本", "day": "\(myDateFormatter)", "rate": "\(self.matchRate)"],
         ["team": "フランス", "team2": "イタリア", "day": "2019/08/29", "time":"05:00", "rate": "\(self.matchRate)"],
         ["team": "ブラジル", "team2": "カナダ", "day": "2019/08/31", "time":"18:00", "rate": "\(self.matchRate)"]
     ]
