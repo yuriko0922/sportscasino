@@ -9,17 +9,19 @@
 import UIKit
 
 class GameViewController: UIViewController {
+    
+    
     // 倍率の数字demo
     var matchRate = 2000
     
-    var dictionay: [[String: Any]] = [[:]]
+     var dictionay: [[String: Any]] = [[:]]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        let dateFormatter = DateFormatter()
+        // de-ta
+       let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ja_JP")
         dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 9)
@@ -109,7 +111,7 @@ class GameViewController: UIViewController {
         performSegue(withIdentifier: "bet", sender: nil)
     }
     
-    // ---------試合情報のラベル２---------------
+   // ---------試合情報のラベル２---------------
     // チーム代入ラベル1
     @IBOutlet weak var teamLabel2: UILabel!
     // チーム代入ラベル2
@@ -159,7 +161,7 @@ class GameViewController: UIViewController {
         // かける画面に遷移
         performSegue(withIdentifier: "bet", sender: nil)
     }
-    
+ 
     
 }
 

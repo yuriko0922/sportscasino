@@ -9,22 +9,60 @@
 import UIKit
 
 class ResultViewController2: UIViewController {
+    
+   
+    
 // 現在の日時
-    var dt = Date()
+    var nowTime = Date()
     var dateFormatter = DateFormatter()
     
-    // 試合終了時刻
-   // var finishGame = 
+    // 辞書
+     var dictionay: [[String: Any]] = [[:]]
+    
+   // let d = dateList()
+    
+    var myDate: Date = Date()
+    var myDate2: Date = Date()
+    
+
+   
+    
+    // 試合終了時刻 DateとnowTimeをdateとmyDatedに置き換えないといけないけどシングルトンできてないーーーーーーー00秒*90分*00時間*0日
+  //  lazy var finishGame = dateFormatter.date(timeInterval: 00+90+00+0, since: d.)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // de-ta
+        dateFormatter.locale = Locale(identifier: "ja_JP")
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 9)
+        
+        
+        
+     //  d.dateMethod()
+        let string = "2019-08-30T05:20:00Z"
+//    guard let myDate = dateFormatter.date(from: string) else {
+//            return
+//        }
+        myDate = dateFormatter.date(from: string)!
+        
+        let string2 = "2019-08-29T01:03:00Z"
+        myDate2 = dateFormatter.date(from: string2)!
+        
+    
     }
     
 // 結果を見るボタン
     @IBAction func lookResult(_ sender: UIButton) {
         
+       // d.dateMethod()
+        
+        if nowTime <= myDate2 {
+            // 結果観れる画面に遷移
+             performSegue(withIdentifier: "ok", sender: nil)
+        } else {
+             performSegue(withIdentifier: "still", sender: nil)
+        }
         
     }
     /*
@@ -38,3 +76,20 @@ class ResultViewController2: UIViewController {
     */
 
 }
+
+/*
+class dateList {
+    let dateFormatter = DateFormatter()
+    
+    func dateMethod() {
+        
+        dateFormatter.locale = Locale(identifier: "ja_JP")
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 9)
+        
+        // 試合日時１
+//        let string = "2019-08-30T05:20:00Z"
+//        let myDate = dateFormatter.date(from: string)!
+    }
+ */
+

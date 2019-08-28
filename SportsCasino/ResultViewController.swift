@@ -17,6 +17,7 @@ class ResultViewController: UIViewController {
         let dt = Date()
         let dateFormatter = DateFormatter()
         
+        
         // DateFormatter を使用して書式とロケールを指定する
         dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
         
