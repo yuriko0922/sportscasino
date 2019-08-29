@@ -14,7 +14,8 @@ class BetViewController: UIViewController {
     let singleton :Singleton = Singleton.shered
     // false アラート出す かけてない
     // true かけてる
-    var betLog:  Bool = false
+    var betCoutry: String = ""
+    var betNumber: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +44,9 @@ class BetViewController: UIViewController {
         if betNum == 0 {
             showAlert(message: "ポイントを選択してください", completion: nil)
         } else {
-            betLog = true
-            UserDefaults.standard.set(betLog, forKey: "betKey")
+            betNumber = betNum
+            UserDefaults.standard.set(betNumber, forKey: "betNumKey")
+            UserDefaults.standard.set(betCoutry, forKey: "betCountryKey")
             
             // textfiledの内容取得
             betPointLabel.text = "\(betNum)"

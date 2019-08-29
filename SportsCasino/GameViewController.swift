@@ -14,6 +14,9 @@ class GameViewController: UIViewController {
     var matchRate = 2000
     
     var dictionay: [[String: Any]] = [[:]]
+    // 選択された国
+    var serectCountry = ""
+    
     
     
     override func viewDidLoad() {
@@ -71,8 +74,9 @@ class GameViewController: UIViewController {
     @IBOutlet weak var bairituLabel: UILabel!
     
     @IBOutlet weak var bairitu6: UISegmentedControl!
-    // 勝ち負け選択のやつ左
+    // 勝ち負け選択のやつ左 アメリカ
     @IBAction func bairitu1(_ sender: UISegmentedControl) {
+        serectCountry = "アメリカ"
         switch sender.selectedSegmentIndex {
         case 0:
             bairituLabel.text = "3倍"
@@ -95,8 +99,10 @@ class GameViewController: UIViewController {
         }
     }
     @IBOutlet weak var bairitu2: UISegmentedControl!
-    // 勝ち負け選択のやつ右
+    // 勝ち負け選択のやつ右　日本
+    
     @IBAction func bairitu5(_ sender: UISegmentedControl) {
+        serectCountry = "日本"
         switch sender.selectedSegmentIndex {
         case 0:
             // bairituLabel.text = "\(dictionay[0]["rate"]!)"
@@ -117,6 +123,14 @@ class GameViewController: UIViewController {
         default:
             print("該当なし")
         }
+    }
+    
+    // 画面遷移の前に実行される 情報を渡す準備（保存的な）
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "bet", let nextVC = segue.destination as? BetViewController else {
+            return
+        }
+        nextVC.betCoutry = serectCountry
     }
     // 1試合目BETボタン
     @IBAction func betBottun1(_ sender: UIButton) {

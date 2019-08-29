@@ -50,8 +50,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="createUser:" destination="cti-Yb-v2n" eventType="touchUpInside" id="nwn-Zq-8vY"/>
-                                            <action selector="userLogin:" destination="cti-Yb-v2n" eventType="touchUpInside" id="nuH-cy-Wwy"/>
+                                            <action selector="userLogin:" destination="cti-Yb-v2n" eventType="touchUpInside" id="bj8-le-qmE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-fs-h2b">
@@ -87,7 +86,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="createUser:" destination="cti-Yb-v2n" eventType="touchUpInside" id="ejX-mZ-A94"/>
+                                    <action selector="createUser:" destination="cti-Yb-v2n" eventType="touchUpInside" id="L85-Z2-vHk"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SportsCasinoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-rU-C6L">

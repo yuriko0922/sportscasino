@@ -93,8 +93,9 @@ class ResultViewController2: UIViewController {
     // 結果を見るボタン1
     @IBAction func lookResult(_ sender: UIButton) {
         
-        print("betKey:\(UserDefaults.standard.bool(forKey: "betKey"))")
-        if UserDefaults.standard.bool(forKey: "betKey") {
+//        print("betKey:\(UserDefaults.standard.bool(forKey: "betKey"))")
+        
+        if (UserDefaults.standard.string(forKey: "betCountryKey") != nil) {
             if nowTime >= myDate2 {
                 // 結果観れる画面に遷移
                 performSegue(withIdentifier: "ok", sender: nil)

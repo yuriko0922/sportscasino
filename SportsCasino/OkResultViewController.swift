@@ -53,6 +53,14 @@ class OkResultViewController: UIViewController {
         resultTeamLabel2.text = "\(dictionay[0]["team2"] ?? "")"
         resultDayLabel.text = "\(dictionay[0]["day"] ?? "")"
         
+        if let str = UserDefaults.standard.string(forKey: "betCountryKey") {
+            selectedCountry.append(str)
+        }
+        
+//        if let num =  {
+            betNum = UserDefaults.standard.integer(forKey: "betNumKey")
+//        }
+        
         result()
     }
     // 結果の日時ラベル
