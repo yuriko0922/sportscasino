@@ -24,10 +24,10 @@ class ViewController: UIViewController {
     // パスワード入力するテキストフィールド
     @IBOutlet weak var passwordTextFiled: UITextField!
     
-//    ユーザー新規作成ボタン
+    //    ユーザー新規作成ボタン
     @IBAction func createUser(_ sender: UIButton) {
-    
-    
+        
+        
         guard let email = emailTextField.text, let password = passwordTextFiled.text else {
             print("nnnn")
             // 省略
@@ -45,16 +45,16 @@ class ViewController: UIViewController {
             } else {
                 // 成功した場合の処理
                 self.toHome()
-            print("ok")
-        }
-    })
+                print("ok")
+            }
+        })
     }
     
-//    ログインボタン
+    //    ログインボタン
     @IBAction func userLogin(_ sender: UIButton) {
         guard let email = emailTextField.text, let password = passwordTextFiled.text else {
             return
-    }
+        }
         // FirebaseAuthのログイン処理
         Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             if let error = error {
@@ -89,12 +89,23 @@ class ViewController: UIViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: "login")
         // 遷移処理
         self.present(vc, animated: true)
-        
-        
     }
-
-
-
+    // キーボードを閉じる処理
+    // タッチされたかを判断
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // キーボードが開いていたら
+        if (emailTextField.isFirstResponder) {
+            // 閉じる
+            emailTextField.resignFirstResponder()
+        }
+        if (passwordTextFiled.isFirstResponder) {
+            passwordTextFiled.resignFirstResponder()
+        }
+    }
+    
+    @IBAction func logOut(_ sender: Any) {
+        try! Auth.auth().signOut()
+    }
 }
 
 

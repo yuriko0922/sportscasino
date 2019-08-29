@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Amana-Regular.otf">
-            <string>Amana-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="0er-xj-XNL">
@@ -41,23 +36,56 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYa-oX-bnR">
-                                <rect key="frame" x="126" y="411" width="68" height="33"/>
-                                <fontDescription key="fontDescription" name="Amana-Regular" family="Amana" pointSize="17"/>
-                                <state key="normal" title="ログイン">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="createUser:" destination="cti-Yb-v2n" eventType="touchUpInside" id="nwn-Zq-8vY"/>
-                                    <action selector="userLogin:" destination="cti-Yb-v2n" eventType="touchUpInside" id="nuH-cy-Wwy"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GwO-Iy-cM4">
+                                <rect key="frame" x="62.5" y="423" width="195" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYa-oX-bnR">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="33"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.36234482020547948" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="ログイン">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="createUser:" destination="cti-Yb-v2n" eventType="touchUpInside" id="nwn-Zq-8vY"/>
+                                            <action selector="userLogin:" destination="cti-Yb-v2n" eventType="touchUpInside" id="nuH-cy-Wwy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-fs-h2b">
+                                        <rect key="frame" x="105" y="0.0" width="90" height="33"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.35501391267123289" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="8BX-TF-Zle"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="ログアウト">
+                                            <color key="titleColor" red="0.98150874460000004" green="1" blue="0.99492005390000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="logOut:" destination="cti-Yb-v2n" eventType="touchUpInside" id="a6f-uH-nlz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB1-fm-U7L">
-                                <rect key="frame" x="78" y="482" width="164" height="36"/>
+                                <rect key="frame" x="75" y="482" width="170" height="36"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.36392337328767121" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="h5k-iI-Edj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="新規登録はこちら">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="createUser:" destination="cti-Yb-v2n" eventType="touchUpInside" id="ejX-mZ-A94"/>
                                 </connections>
@@ -75,11 +103,11 @@
                             <constraint firstItem="zB1-fm-U7L" firstAttribute="centerX" secondItem="bdl-ug-FoF" secondAttribute="centerX" id="4Z7-13-zd3"/>
                             <constraint firstItem="o2L-ru-acN" firstAttribute="bottom" secondItem="zB1-fm-U7L" secondAttribute="bottom" constant="50" id="5ru-gS-jnR"/>
                             <constraint firstItem="A3Y-gb-RDy" firstAttribute="centerX" secondItem="bdl-ug-FoF" secondAttribute="centerX" id="Jk6-Yt-xTx"/>
-                            <constraint firstItem="HYa-oX-bnR" firstAttribute="top" secondItem="A3Y-gb-RDy" secondAttribute="bottom" constant="15" id="L3l-Mc-tRf"/>
                             <constraint firstItem="1gy-rU-C6L" firstAttribute="centerX" secondItem="bdl-ug-FoF" secondAttribute="centerX" id="Q78-8G-ERK"/>
                             <constraint firstItem="1gy-rU-C6L" firstAttribute="top" secondItem="bdl-ug-FoF" secondAttribute="top" constant="50" id="QF5-Jp-aE3"/>
-                            <constraint firstItem="HYa-oX-bnR" firstAttribute="centerX" secondItem="bdl-ug-FoF" secondAttribute="centerX" id="Rl2-zq-mee"/>
                             <constraint firstItem="Fms-Mv-1eu" firstAttribute="top" secondItem="1gy-rU-C6L" secondAttribute="bottom" constant="46" id="acN-4o-mf9"/>
+                            <constraint firstItem="GwO-Iy-cM4" firstAttribute="centerX" secondItem="bdl-ug-FoF" secondAttribute="centerX" id="dpo-PB-tEO"/>
+                            <constraint firstItem="GwO-Iy-cM4" firstAttribute="top" secondItem="A3Y-gb-RDy" secondAttribute="bottom" constant="27" id="idp-oD-iWC"/>
                             <constraint firstItem="Fms-Mv-1eu" firstAttribute="centerX" secondItem="bdl-ug-FoF" secondAttribute="centerX" id="nKa-yq-sI0"/>
                             <constraint firstItem="A3Y-gb-RDy" firstAttribute="top" secondItem="Fms-Mv-1eu" secondAttribute="bottom" constant="40" id="qGz-MD-c94"/>
                         </constraints>
