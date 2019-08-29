@@ -17,24 +17,9 @@ class ResultViewController: UIViewController {
         let dt = Date()
         let dateFormatter = DateFormatter()
         
-        
         // DateFormatter を使用して書式とロケールを指定する
         dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
         
         print(dateFormatter.string(from: dt))
-        // とりあえずテストで現在の日時取得してみた dateFormatter.string(from: dt)
-        //nowTimeLabel.text = dateFormatter.string(from: dt)
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

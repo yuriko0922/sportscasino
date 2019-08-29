@@ -9,15 +9,9 @@
 import UIKit
 
 class fuyasuViewController: UIViewController {
-    
-  //  var textFieldNum = 0
- //   var nowPoint = 0
-    
+  
     var currentNum = 0
 
-    // データクラスのインスタンス化
-//    var data = Data(now: Int, textNum: Int)
-    
     let singleton :Singleton = Singleton.shered
     
     override func viewDidLoad() {
@@ -51,32 +45,21 @@ class fuyasuViewController: UIViewController {
     // 増やすポイントを反映して表示するラベル
     @IBOutlet weak var fuyasuLabel: UILabel!
     
-    // テキストフィールドに入力したポイント数分増やす
+    // ポイント数分増やす
     @IBAction func fuyasuBottun(_ sender: UIButton) {
-        // textfiledの内容取得
+        // 内容取得
         fuyasuLabel.text! = "\(currentNum)"
         // 現在のポイントに反映させる 元々のNowpointをgetしないとcurrentNumだけだと更新されちゃうから
         singleton.saveNowPoint(nowPoint: singleton.getNowPoint() + currentNum)
         // 入力した数のアラート出させる
-        showAlert(message: "\(currentNum)P増えました", completion: nil)
+        showAlert(message: "\(currentNum)P増えました", completion: {
+            _ in
+            self.navigationController?.popViewController(animated: true)
+        })
         // リセット
         // 数字をリセット
-   //     data.textFieldNum = 0
+        currentNum = 0
         // ラベルに表示される文字列もリセット
         fuyasuLabel.text! = ""
-
     }
-    
-    // アラートを表示する関数
-//    func showAlert(message: String) {
-//        //アラートの作成
-//        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-//        //アラートのアクション(ボタン部分の定義）
-//        let close = UIAlertAction(title: "閉じる", style: .cancel, handler: nil)
-//        //作成したアラートに閉じるボタン追加
-//        alert.addAction(close)
-//        //アラートを表示する
-//        present(alert,animated: true, completion: nil)
-//    }
-    
 }

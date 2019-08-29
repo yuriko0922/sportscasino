@@ -27,13 +27,7 @@ class Data {
     let string: String
     let myDate: Date
     
-    
-    
-    
-    
-    
-    
-    // 書く場所ないからファンクション作ってみたけど合ってんのかな
+    // 書く場所ないからファンクション作ってみた
     func timeData() {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ja_JP")
@@ -43,12 +37,8 @@ class Data {
         // 試合のいろんな情報
         dictionay = [
             ["team": "アメリカ", "team2": "日本", "day": myDate, "rate": "\(self.matchRate)"],
-            /*  ["team": "フランス", "team2": "イタリア", "day": myDateSecond, "rate": "\(self.matchRate)"],
-             ["team": "ブラジル", "team2": "カナダ", "day": myDateThird, "rate": "\(self.matchRate)"] */
         ]
     }
-    
-    
     
     init(nowPoint: Int, textFieldNum: Int, dictionay: [[String: Any]], string: String, myDate: Date, matchRate: Int) {
         self.nowPoint = nowPoint
@@ -99,7 +89,6 @@ class Singleton: NSObject {
     func getTextFieldNum() -> Int {
         return data.textFieldNum
     }
-   
     
     func getString() -> String {
         return data.string
@@ -112,8 +101,6 @@ class Singleton: NSObject {
     func getMatchRate() -> Int {
         return data.matchRate
     }
-    
-    
 }
 
 

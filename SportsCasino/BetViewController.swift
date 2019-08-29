@@ -10,7 +10,7 @@ import UIKit
 
 class BetViewController: UIViewController {
     // 賭けたポイントの値
-
+    
     let singleton :Singleton = Singleton.shered
     // false アラート出す かけてない
     // true かけてる
@@ -18,8 +18,6 @@ class BetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     // 賭けるポイント表示されるラベル
     
@@ -57,24 +55,9 @@ class BetViewController: UIViewController {
                 _ in
                 self.navigationController?.popViewController(animated: true)
             })
-            // リセット
-            // 数字をリセット
-           // betNum = 0
-            // ラベルに表示される文字列もリセット
             
+            // ラベルに表示される文字列もリセット
             betPointLabel.text = "0"
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -18,10 +18,6 @@ class OkResultViewController: UIViewController {
     
     var dictionay: [[String: Any]] = [[:]]
     
-    
-    // ポイント差異
-   // var ComparisonPoint: Int = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // de-ta
@@ -53,15 +49,9 @@ class OkResultViewController: UIViewController {
         let time2 = "\(dictionay[0]["day"] ?? "")"
         let timePrefix2 = String(time1.prefix(19))
         
-        
-        
         resultTeamLabel1.text = "\(dictionay[0]["team"] ?? "")"
-        
-        
         resultTeamLabel2.text = "\(dictionay[0]["team2"] ?? "")"
-        
         resultDayLabel.text = "\(dictionay[0]["day"] ?? "")"
-        
         
         result()
     }
@@ -78,33 +68,25 @@ class OkResultViewController: UIViewController {
     @IBOutlet weak var resultBetLabel: UILabel!
     
     func result() {
-       
+        
         if let winner = dictionay[0]["win"] as? String {
             if winner == selectedCountry[0] {
                 resultBetLabel.text = "的中"
                 // Intとダブルは計算できないから型変換
                 betNum = Int(Double(betNum) * 3 * rate)
-                
-                print("いいいいいいいいいいいいいいいいいいいいい\(betNum)")
-                
                 resultPointLabel.text = "\(betNum)"
                 singleton.saveNowPoint(nowPoint: singleton.getNowPoint() + betNum)
                 //ComparisonPoint = betNum
             } else {
                 resultBetLabel.text = "はずれ"
                 betNum = 0
-                //resultPointLabel.text = "\(betNum)"
             }
         }
         betNum = 0
     }
     
-    
     // 結果のポイント変動ラベル
     @IBOutlet weak var resultPointLabel: UILabel!
-    
-    
-    
 }
 
 var betNum = 0

@@ -11,10 +11,7 @@ import UIKit
 
 
 public class Alert {
-    
-    
     public let message: String
-    
     public init(message: String?) {
         self.message = message ?? ""
     }
@@ -37,7 +34,6 @@ extension UIViewController {
     func showAlert(message: String, completion: ((UIAlertAction) -> Void)?) {
         let alert = Alert(message: message)
         alert.show(vc: self, completion: completion)
-        
     }
 }
 

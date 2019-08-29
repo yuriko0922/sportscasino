@@ -10,9 +10,6 @@ import UIKit
 
 
 class loginViewController: UIViewController {
-    
- //   var nowPoint = 0
-    
     // 現在のポイントを表示するラベル
     @IBOutlet weak var nowPointLabel: UILabel!
     
@@ -29,10 +26,8 @@ class loginViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-
+        
     }
-
-
     // 受け取る画面に遷移するためのボタン
     @IBAction func senniUketori(_ sender: UIButton) {
         // 遷移処理
@@ -42,19 +37,7 @@ class loginViewController: UIViewController {
     // 増やす画面に遷移するためのボタン
     @IBAction func senniFuyasu(_ sender: UIButton) {
         // 遷移処理
-         performSegue(withIdentifier: "fuyasu", sender: nil)
+        performSegue(withIdentifier: "fuyasu", sender: nil)
         
     }
-    // アラートを表示する関数
-    /*func showAlert(message: String) {
-        //アラートの作成
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        //アラートのアクション(ボタン部分の定義）
-        let close = UIAlertAction(title: "閉じる", style: .cancel, handler: nil)
-        //作成したアラートに閉じるボタン追加
-        alert.addAction(close)
-        //アラートを表示する
-        present(alert,animated: true, completion: nil)
-    }*/
-
 }
