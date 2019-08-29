@@ -58,7 +58,7 @@ class fuyasuViewController: UIViewController {
         // 現在のポイントに反映させる 元々のNowpointをgetしないとcurrentNumだけだと更新されちゃうから
         singleton.saveNowPoint(nowPoint: singleton.getNowPoint() + currentNum)
         // 入力した数のアラート出させる
-        showAlert(message: "\(currentNum)P増えました")
+        showAlert(message: "\(currentNum)P増えました", completion: nil)
         // リセット
         // 数字をリセット
    //     data.textFieldNum = 0

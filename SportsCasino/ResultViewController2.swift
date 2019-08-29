@@ -10,25 +10,25 @@ import UIKit
 
 class ResultViewController2: UIViewController {
     
-   
     
-// 現在の日時
+    
+    // 現在の日時
     var nowTime = Date()
     var dateFormatter = DateFormatter()
     
     // 辞書
-     var dictionay: [[String: Any]] = [[:]]
+    var dictionay: [[String: Any]] = [[:]]
     
-   // let d = dateList()
+    // let d = dateList()
     
     var myDate: Date = Date()
     var myDate2: Date = Date()
     
-
-   
+    
+    
     
     // 試合終了時刻 DateとnowTimeをdateとmyDatedに置き換えないといけないけどシングルトンできてないーーーーーーー00秒*90分*00時間*0日
-  //  lazy var finishGame = dateFormatter.date(timeInterval: 00+90+00+0, since: d.)
+    //  lazy var finishGame = dateFormatter.date(timeInterval: 00+90+00+0, since: d.)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,57 +39,64 @@ class ResultViewController2: UIViewController {
         
         
         
-     //  d.dateMethod()
+        //  d.dateMethod()
         let string = "2019-08-30T05:20:00Z"
-//    guard let myDate = dateFormatter.date(from: string) else {
-//            return
-//        }
+        //    guard let myDate = dateFormatter.date(from: string) else {
+        //            return
+        //        }
         myDate = dateFormatter.date(from: string)!
         
         let string2 = "2019-08-29T01:03:00Z"
         myDate2 = dateFormatter.date(from: string2)!
         
-    
+        
     }
     
-// 結果を見るボタン
+    // 結果を見るボタン
     @IBAction func lookResult(_ sender: UIButton) {
         
-       // d.dateMethod()
-        
-        if nowTime <= myDate2 {
-            // 結果観れる画面に遷移
-             performSegue(withIdentifier: "ok", sender: nil)
+        // d.dateMethod()
+        print("betKey:\(UserDefaults.standard.bool(forKey: "betKey"))")
+        if UserDefaults.standard.bool(forKey: "betKey") {
+            if nowTime >= myDate2 {
+                // 結果観れる画面に遷移
+                performSegue(withIdentifier: "ok", sender: nil)
+            } else {
+                performSegue(withIdentifier: "still", sender: nil)
+            }
         } else {
-             performSegue(withIdentifier: "still", sender: nil)
+            showAlert(message: "BETする試合を選択してください", completion: { _ in
+                self.navigationController?.popViewController(animated: true)
+            })
         }
-        
+       
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destination.
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+
 
 /*
-class dateList {
-    let dateFormatter = DateFormatter()
-    
-    func dateMethod() {
-        
-        dateFormatter.locale = Locale(identifier: "ja_JP")
-        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
-        dateFormatter.timeZone = TimeZone(secondsFromGMT: 9)
-        
-        // 試合日時１
-//        let string = "2019-08-30T05:20:00Z"
-//        let myDate = dateFormatter.date(from: string)!
-    }
+ class dateList {
+ let dateFormatter = DateFormatter()
+ 
+ func dateMethod() {
+ 
+ dateFormatter.locale = Locale(identifier: "ja_JP")
+ dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
+ dateFormatter.timeZone = TimeZone(secondsFromGMT: 9)
+ 
+ // 試合日時１
+ //        let string = "2019-08-30T05:20:00Z"
+ //        let myDate = dateFormatter.date(from: string)!
+ }
  */
 

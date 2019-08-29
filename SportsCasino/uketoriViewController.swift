@@ -48,7 +48,7 @@ class uketoriViewController: UIViewController {
         // 現在のポイントに反映させる
   singleton.saveNowPoint(nowPoint: singleton.getNowPoint() - uketoriNum)
         // 入力した数のアラート出させる
- showAlert(message: "\(uketoriNum)P受け取りました")
+        showAlert(message: "\(uketoriNum)P受け取りました", completion: nil)
         // リセット
         // 数字をリセット
        uketoriNum = 0

@@ -13,6 +13,8 @@ class OkResultViewController: UIViewController {
     
     // 倍率の数字demo
     var matchRate = 2000
+    // こちらの１０％の利益を引くためのお０.９の定義
+    let rate = 0.9
     
     var dictionay: [[String: Any]] = [[:]]
     
@@ -45,9 +47,16 @@ class OkResultViewController: UIViewController {
             ["team": "ブラジル", "team2": "カナダ", "day": myDateThird, "rate": "\(self.matchRate)"]
         ]
         
-    
+        let time1 = "\(dictionay[0]["day"] ?? "")"
+        let timePrefix1 = String(time1.prefix(19))
+        
+        let time2 = "\(dictionay[0]["day"] ?? "")"
+        let timePrefix2 = String(time1.prefix(19))
+        
+        
         
         resultTeamLabel1.text = "\(dictionay[0]["team"] ?? "")"
+        
         
         resultTeamLabel2.text = "\(dictionay[0]["team2"] ?? "")"
         
@@ -69,10 +78,15 @@ class OkResultViewController: UIViewController {
     @IBOutlet weak var resultBetLabel: UILabel!
     
     func result() {
+       
         if let winner = dictionay[0]["win"] as? String {
             if winner == selectedCountry[0] {
                 resultBetLabel.text = "的中"
-                 betNum *= 3
+                // Intとダブルは計算できないから型変換
+                betNum = Int(Double(betNum) * 3 * rate)
+                
+                print("いいいいいいいいいいいいいいいいいいいいい\(betNum)")
+                
                 resultPointLabel.text = "\(betNum)"
                 singleton.saveNowPoint(nowPoint: singleton.getNowPoint() + betNum)
                 //ComparisonPoint = betNum

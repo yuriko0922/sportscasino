@@ -20,11 +20,11 @@ public class Alert {
     }
     
     // アラートを表示する関数
-    func show(vc: UIViewController?) {
+    func show(vc: UIViewController?, completion: ((UIAlertAction) -> Void)?) {
         //アラートの作成
         let alert = UIAlertController(title: nil, message: self.message, preferredStyle: .alert)
         //アラートのアクション(ボタン部分の定義）
-        let close = UIAlertAction(title: "閉じる", style: .cancel, handler: nil)
+        let close = UIAlertAction(title: "閉じる", style: .cancel, handler: completion)
         //作成したアラートに閉じるボタン追加
         alert.addAction(close)
         //アラートを表示する
@@ -34,9 +34,9 @@ public class Alert {
 
 extension UIViewController {
     
-    func showAlert(message: String) {
+    func showAlert(message: String, completion: ((UIAlertAction) -> Void)?) {
         let alert = Alert(message: message)
-        alert.show(vc: self)
+        alert.show(vc: self, completion: completion)
         
     }
 }

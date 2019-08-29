@@ -31,6 +31,8 @@ class Data {
     
     
     
+    
+    
     // 書く場所ないからファンクション作ってみたけど合ってんのかな
     func timeData() {
         let dateFormatter = DateFormatter()

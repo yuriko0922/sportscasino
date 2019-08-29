@@ -12,10 +12,14 @@ class BetViewController: UIViewController {
     // 賭けたポイントの値
 
     let singleton :Singleton = Singleton.shered
+    // false アラート出す かけてない
+    // true かけてる
+    var betLog:  Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     // 賭けるポイント表示されるラベル
     
@@ -39,14 +43,20 @@ class BetViewController: UIViewController {
     
     @IBAction func betBottun3(_ sender: UIButton) {
         if betNum == 0 {
-            showAlert(message: "ポイントを選択してください")
+            showAlert(message: "ポイントを選択してください", completion: nil)
         } else {
+            betLog = true
+            UserDefaults.standard.set(betLog, forKey: "betKey")
+            
             // textfiledの内容取得
             betPointLabel.text = "\(betNum)"
             // 現在のポイントに反映させる
             singleton.saveNowPoint(nowPoint: singleton.getNowPoint() - betNum)
             // 入力した数のアラート出させる
-            showAlert(message: "\(betNum)P BETしました")
+            showAlert(message: "\(betNum)P BETしました", completion: {
+                _ in
+                self.navigationController?.popViewController(animated: true)
+            })
             // リセット
             // 数字をリセット
            // betNum = 0
@@ -55,6 +65,8 @@ class BetViewController: UIViewController {
             betPointLabel.text = "0"
         }
     }
+    
+    
     /*
     // MARK: - Navigation
 

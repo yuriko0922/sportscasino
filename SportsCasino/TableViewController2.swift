@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController2: UITableViewController {
 
-    var names: [String] = ["会員登録", "カード登録"]
+    var names: [String] = ["カード登録"]
     override func viewDidLoad() {
         super.viewDidLoad()
 

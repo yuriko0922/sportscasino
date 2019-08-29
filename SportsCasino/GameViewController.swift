@@ -110,11 +110,14 @@ class GameViewController: UIViewController {
             // bairituLabel.text = "\(dictionay[0]["rate"]!)"
             bairitu6.selectedSegmentIndex = 1
             bairituLabel.text = "60倍"
+            selectedCountry = ["イタリア","日本"]
            
         case 1:
             //  bairituLabel.text = "\(dictionay[0]["rate"]!)"
             bairitu6.selectedSegmentIndex = 0
             bairituLabel.text = "3倍"
+            selectedCountry = ["フランス","アメリカ"]
+            
             
         case 2:
             // bairituLabel.text = "\(dictionay[0]["rate"]!)"
@@ -145,12 +148,17 @@ class GameViewController: UIViewController {
         case 0:
             bairituLabel2.text = "\(dictionay[1]["rate"]!)"
             bairitu8.selectedSegmentIndex = 1
+             selectedCountry = ["アメリカ","フランス"]
+            bairituLabel2.text = "5倍"
         case 1:
             bairituLabel2.text = "\(dictionay[1]["rate"]!)"
             bairitu8.selectedSegmentIndex = 0
+             selectedCountry = ["日本","イタリア"]
+             bairituLabel2.text = "8倍"
         case 2:
             bairituLabel2.text = "\(dictionay[1]["rate"]!)"
             bairitu8.selectedSegmentIndex = 2
+             bairituLabel2.text = "10倍"
         default:
             print("該当なし")
         }
@@ -163,12 +171,17 @@ class GameViewController: UIViewController {
         case 0:
             bairituLabel2.text = "\(dictionay[1]["rate"]!)"
             bairitu7.selectedSegmentIndex = 1
+             selectedCountry = ["日本","イタリア"]
+            bairituLabel2.text = "8倍"
         case 1:
             bairituLabel2.text = "\(dictionay[1]["rate"]!)"
             bairitu7.selectedSegmentIndex = 0
+           selectedCountry = ["アメリカ","フランス"]
+            bairituLabel2.text = "5倍"
         case 2:
             bairituLabel2.text = "\(dictionay[1]["rate"]!)"
             bairitu7.selectedSegmentIndex = 2
+            bairituLabel2.text = "10倍"
         default:
             print("該当なし")
         }
