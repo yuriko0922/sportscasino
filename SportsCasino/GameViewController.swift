@@ -49,9 +49,7 @@ class GameViewController: UIViewController {
         
         let time2 = "\(dictionay[0]["day"] ?? "")"
         let timePrefix2 = String(time1.prefix(19))
-        
-        let time3 = "\(dictionay[0]["day"] ?? "")"
-        let timePrefix3 = String(time1.prefix(19))
+       
         
         // 1番上の試合
         dayLabel1.text = timePrefix1
