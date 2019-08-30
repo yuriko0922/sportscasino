@@ -200,7 +200,8 @@ class GameViewController: UIViewController {
     }
 }
 
-var selectedCountry : [String] = []
+var selectedCountry : [String] = [
+]
 var selectedCountry2 : [String] = []
 
 

@@ -9,6 +9,7 @@
 import UIKit
 
 class BetViewController: UIViewController {
+    
     // 賭けたポイントの値
     
     let singleton :Singleton = Singleton.shered
