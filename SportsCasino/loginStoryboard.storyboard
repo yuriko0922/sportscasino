@@ -145,94 +145,142 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポイントを受け取る" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES7-ff-ekR">
-                                <rect key="frame" x="82" y="118.5" width="156" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOe-5r-qBF">
-                                <rect key="frame" x="122.5" y="159" width="75" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naz-yO-KEB" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="20" y="239" width="640" height="250"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RS-0T-DXL">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="bi7-OF-gQo"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGG-r4-rAT">
-                                        <rect key="frame" x="60" y="0.0" width="15" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="15" id="9Um-JB-LqO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A9S-sd-4YS">
+                                        <rect key="frame" x="10" y="10" width="620" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポイントを受け取る" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES7-ff-ekR">
+                                                <rect key="frame" x="0.0" y="0.0" width="620" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UOe-5r-qBF">
+                                                <rect key="frame" x="0.0" y="60" width="620" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RS-0T-DXL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="bi7-OF-gQo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGG-r4-rAT">
+                                                        <rect key="frame" x="310" y="0.0" width="310" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="15" id="9Um-JB-LqO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-fK-xRD">
+                                                <rect key="frame" x="0.0" y="120" width="620" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78O-cj-9MN" customClass="AnimatableButton" customModule="IBAnimatable">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                        <state key="normal" title="+1P">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="plus1Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="zKI-xZ-PQN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ6-Kx-FUu" customClass="AnimatableButton" customModule="IBAnimatable">
+                                                        <rect key="frame" x="210" y="0.0" width="200" height="50"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="+10P">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="plus10Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="3XH-5c-OCK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-WU-Wp8" customClass="AnimatableButton" customModule="IBAnimatable">
+                                                        <rect key="frame" x="420" y="0.0" width="200" height="50"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="yLf-wZ-IxS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                        <state key="normal" title="+ 100">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="plus100Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="lru-9a-gfQ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqz-hV-NI8" customClass="AnimatableButton" customModule="IBAnimatable">
+                                                <rect key="frame" x="0.0" y="180" width="620" height="50"/>
+                                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="受け取る">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="uketoriBottun:" destination="gia-GK-UjI" eventType="touchUpInside" id="gRF-JG-BkT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-fK-xRD">
-                                <rect key="frame" x="45" y="259" width="230" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78O-cj-9MN">
-                                        <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+1P">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="plus1Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="zKI-xZ-PQN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ6-Kx-FUu">
-                                        <rect key="frame" x="80" y="0.0" width="70" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+10P">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="plus10Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="3XH-5c-OCK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-WU-Wp8">
-                                        <rect key="frame" x="160" y="0.0" width="70" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="J9i-CR-Ky8"/>
-                                            <constraint firstAttribute="height" constant="50" id="yLf-wZ-IxS"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+100P">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="plus100Uketori:" destination="gia-GK-UjI" eventType="touchUpInside" id="lru-9a-gfQ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqz-hV-NI8">
-                                <rect key="frame" x="129" y="359" width="62" height="30"/>
-                                <state key="normal" title="受け取る">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="uketoriBottun:" destination="gia-GK-UjI" eventType="touchUpInside" id="gRF-JG-BkT"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="A9S-sd-4YS" firstAttribute="top" secondItem="naz-yO-KEB" secondAttribute="top" constant="10" id="Z5e-x8-NIp"/>
+                                    <constraint firstAttribute="bottom" secondItem="A9S-sd-4YS" secondAttribute="bottom" constant="10" id="aPj-Io-QZj"/>
+                                    <constraint firstItem="A9S-sd-4YS" firstAttribute="leading" secondItem="naz-yO-KEB" secondAttribute="leading" constant="10" id="vPc-jc-6R8"/>
+                                    <constraint firstAttribute="trailing" secondItem="A9S-sd-4YS" secondAttribute="trailing" constant="10" id="wbQ-r8-WWV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SportsCasinoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="Nge-Fy-YGg">
+                                <rect key="frame" x="40" y="74" width="600" height="135"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UOe-5r-qBF" firstAttribute="top" secondItem="ES7-ff-ekR" secondAttribute="bottom" constant="20" id="FuA-eH-hgl"/>
-                            <constraint firstItem="JrM-fK-xRD" firstAttribute="centerY" secondItem="5vi-S0-MdT" secondAttribute="centerY" id="Rik-cN-fnV"/>
-                            <constraint firstItem="Xqz-hV-NI8" firstAttribute="centerX" secondItem="5vi-S0-MdT" secondAttribute="centerX" id="aHH-HG-ADB"/>
-                            <constraint firstItem="UOe-5r-qBF" firstAttribute="centerX" secondItem="5vi-S0-MdT" secondAttribute="centerX" id="aMf-Df-Xdf"/>
-                            <constraint firstItem="ES7-ff-ekR" firstAttribute="centerX" secondItem="5vi-S0-MdT" secondAttribute="centerX" id="aYr-mf-xHx"/>
-                            <constraint firstItem="JrM-fK-xRD" firstAttribute="top" secondItem="UOe-5r-qBF" secondAttribute="bottom" constant="50" id="m9T-TR-85J"/>
-                            <constraint firstItem="Xqz-hV-NI8" firstAttribute="top" secondItem="JrM-fK-xRD" secondAttribute="bottom" constant="50" id="oiw-jx-TgV"/>
-                            <constraint firstItem="JrM-fK-xRD" firstAttribute="centerX" secondItem="5vi-S0-MdT" secondAttribute="centerX" id="tOe-RF-RQw"/>
+                            <constraint firstItem="u87-eY-8rl" firstAttribute="trailing" secondItem="Nge-Fy-YGg" secondAttribute="trailing" constant="40" id="2MV-5T-bhQ"/>
+                            <constraint firstItem="u87-eY-8rl" firstAttribute="bottom" secondItem="naz-yO-KEB" secondAttribute="bottom" constant="30" id="4er-c7-6Qn"/>
+                            <constraint firstItem="Nge-Fy-YGg" firstAttribute="leading" secondItem="u87-eY-8rl" secondAttribute="leading" constant="40" id="Fqo-qz-EWg"/>
+                            <constraint firstItem="naz-yO-KEB" firstAttribute="leading" secondItem="u87-eY-8rl" secondAttribute="leading" constant="20" id="QZP-bd-du8"/>
+                            <constraint firstItem="u87-eY-8rl" firstAttribute="trailing" secondItem="naz-yO-KEB" secondAttribute="trailing" constant="20" id="RUW-Yh-GeN"/>
+                            <constraint firstItem="naz-yO-KEB" firstAttribute="top" secondItem="Nge-Fy-YGg" secondAttribute="bottom" constant="30" id="W44-FN-Rgr"/>
+                            <constraint firstItem="Nge-Fy-YGg" firstAttribute="top" secondItem="u87-eY-8rl" secondAttribute="top" constant="10" id="pWr-d4-FA0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u87-eY-8rl"/>
                     </view>
@@ -242,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMZ-OT-yYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5769.5652173913049" y="-705.13392857142856"/>
+            <point key="canvasLocation" x="5769.375" y="-705.63380281690138"/>
         </scene>
         <!--Fuyasu View Controller-->
         <scene sceneID="5Fu-1d-e1m">
