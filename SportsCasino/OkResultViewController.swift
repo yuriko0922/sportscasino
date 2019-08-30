@@ -38,7 +38,7 @@ class OkResultViewController: UIViewController {
         let myDateThird = dateFormatter.date(from: stringThird)!
         // 試合のいろんな情報
         dictionay = [
-            ["team": "アメリカ", "team2": "日本", "day": myDate, "rate": "\(self.matchRate)", "win": "アメリカ"],
+            ["team": "アメリカ", "team2": "日本", "day": myDate, "rate": "\(self.matchRate)", "win": "日本"],
             ["team": "フランス", "team2": "イタリア", "day": myDateSecond, "rate": "\(self.matchRate)", "win": "イタリア"],
             ["team": "ブラジル", "team2": "カナダ", "day": myDateThird, "rate": "\(self.matchRate)"]
         ]
@@ -51,7 +51,7 @@ class OkResultViewController: UIViewController {
         
         resultTeamLabel1.text = "\(dictionay[0]["team"] ?? "")"
         resultTeamLabel2.text = "\(dictionay[0]["team2"] ?? "")"
-        resultDayLabel.text = "\(dictionay[0]["day"] ?? "")"
+        resultDayLabel.text = "\(timePrefix1)"
         
         if let str = UserDefaults.standard.string(forKey: "betCountryKey") {
             selectedCountry.append(str)
@@ -78,15 +78,16 @@ class OkResultViewController: UIViewController {
     func result() {
         
         if let winner = dictionay[0]["win"] as? String {
-            if winner == selectedCountry[0] {
-                resultBetLabel.text = "的中"
+            print("ああああああああaaaaaaaaa\(winner)")
+            if winner == selectedCountry[1] {
+                resultBetLabel.text = "的中！！"
                 // Intとダブルは計算できないから型変換
-                betNum = Int(Double(betNum) * 3 * rate)
+                betNum = Int(Double(betNum) * 50 * rate)
                 resultPointLabel.text = "\(betNum)"
                 singleton.saveNowPoint(nowPoint: singleton.getNowPoint() + betNum)
                 //ComparisonPoint = betNum
             } else {
-                resultBetLabel.text = "はずれ"
+                resultBetLabel.text = "ハズレ"
                 betNum = 0
             }
         }

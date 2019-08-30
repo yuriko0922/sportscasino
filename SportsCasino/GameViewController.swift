@@ -41,7 +41,7 @@ class GameViewController: UIViewController {
         let myDateThird = dateFormatter.date(from: stringThird)!
         // 試合のいろんな情報
         dictionay = [
-            ["team": "アメリカ", "team2": "日本", "day": myDate, "rate": "\(self.matchRate)", "win": "アメリカ"],
+            ["team": "アメリカ", "team2": "日本", "day": myDate, "rate": "\(self.matchRate)", "win": "日本"],
             ["team": "フランス", "team2": "イタリア", "day": myDateSecond, "rate": "\(self.matchRate)"],
             ["team": "ブラジル", "team2": "カナダ", "day": myDateThird, "rate": "\(self.matchRate)"]
         ]
@@ -86,7 +86,7 @@ class GameViewController: UIViewController {
             
         case 1:
             bairitu2.selectedSegmentIndex = 0
-            bairituLabel.text = "60倍"
+            bairituLabel.text = "50倍"
             selectedCountry = ["日本","イタリア"]
             print("**\(selectedCountry[0])")
         // 日本イタリア
@@ -107,7 +107,7 @@ class GameViewController: UIViewController {
         case 0:
             // bairituLabel.text = "\(dictionay[0]["rate"]!)"
             bairitu6.selectedSegmentIndex = 1
-            bairituLabel.text = "60倍"
+            bairituLabel.text = "50倍"
             selectedCountry = ["イタリア","日本"]
             
         case 1:
@@ -200,8 +200,7 @@ class GameViewController: UIViewController {
     }
 }
 
-var selectedCountry : [String] = [
-]
+var selectedCountry : [String] = []
 var selectedCountry2 : [String] = []
 
 
