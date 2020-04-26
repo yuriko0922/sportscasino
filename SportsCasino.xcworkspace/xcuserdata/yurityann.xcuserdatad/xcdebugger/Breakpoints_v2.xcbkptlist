@@ -2,4 +2,212 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SportsCasino/AppDelegate.swift"
+            timestampString = "609624044.52504"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SportsCasino.AppDelegate.__deallocating_deinit"
+                  moduleName = "SportsCasino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/SportsCasino/AppDelegate.swift"
+                  timestampString = "609624045.248319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "SportsCasino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/SportsCasino/AppDelegate.swift"
+                  timestampString = "609624045.256161"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SportsCasino/AppDelegate.swift"
+            timestampString = "609624044.5257241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SportsCasino.AppDelegate.window.getter : Swift.Optional&lt;__C.UIWindow&gt;"
+                  moduleName = "SportsCasino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/SportsCasino/AppDelegate.swift"
+                  timestampString = "609624045.2743011"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SportsCasino.AppDelegate.window.setter : Swift.Optional&lt;__C.UIWindow&gt;"
+                  moduleName = "SportsCasino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/SportsCasino/AppDelegate.swift"
+                  timestampString = "609624045.2772191"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SportsCasino.AppDelegate.window.modify : Swift.Optional&lt;__C.UIWindow&gt;"
+                  moduleName = "SportsCasino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/SportsCasino/AppDelegate.swift"
+                  timestampString = "609624045.279635"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SportsCasino.AppDelegate.window.modify : Swift.Optional&lt;__C.UIWindow&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SportsCasino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/SportsCasino/AppDelegate.swift"
+                  timestampString = "609624045.281747"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SportsCasino/AppDelegate.swift"
+            timestampString = "609624044.525937"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SportsCasino.AppDelegate.__allocating_init() -&gt; SportsCasino.AppDelegate"
+                  moduleName = "SportsCasino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/SportsCasino/AppDelegate.swift"
+                  timestampString = "609624045.304413"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SportsCasino.AppDelegate.init() -&gt; SportsCasino.AppDelegate"
+                  moduleName = "SportsCasino"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurityann/Desktop/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A/SportsCasino/SportsCasino/SportsCasino/AppDelegate.swift"
+                  timestampString = "609624045.3072129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SportsCasino/AppDelegate.swift"
+            timestampString = "609624044.526161"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SportsCasino/AppDelegate.swift"
+            timestampString = "609624044.526392"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
