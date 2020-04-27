@@ -9,22 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // メールアドレスのTextField
+    @IBOutlet weak var Email: UITextField!
+    // パスワードのTextField
+    @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // ログインボタン
+    @IBAction func LoginButton(_ sender: Any) {
     }
-    */
-
+    // ログアウトボタン
+    @IBAction func LogoutButton(_ sender: Any) {
+    }
+    // 新規登録ボタン
+    @IBAction func SignupButton(_ sender: Any) {
+    }
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -50,7 +50,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="userLogin:" destination="cti-Yb-v2n" eventType="touchUpInside" id="bj8-le-qmE"/>
+                                            <action selector="LoginButton:" destination="cti-Yb-v2n" eventType="touchUpInside" id="SPE-di-vQA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-fs-h2b">
@@ -67,7 +67,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="logOut:" destination="cti-Yb-v2n" eventType="touchUpInside" id="a6f-uH-nlz"/>
+                                            <action selector="LogoutButton:" destination="cti-Yb-v2n" eventType="touchUpInside" id="tIq-rR-lDL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -86,7 +86,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="createUser:" destination="cti-Yb-v2n" eventType="touchUpInside" id="L85-Z2-vHk"/>
+                                    <action selector="SignupButton:" destination="cti-Yb-v2n" eventType="touchUpInside" id="wCd-4N-Jtg"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SportsCasino" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-rU-C6L">
@@ -114,8 +114,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="X0z-Bd-uwH"/>
                     <connections>
-                        <outlet property="emailTextField" destination="Fms-Mv-1eu" id="1Pj-RC-o1O"/>
-                        <outlet property="passwordTextFiled" destination="A3Y-gb-RDy" id="4rm-fS-MSn"/>
+                        <outlet property="Email" destination="Fms-Mv-1eu" id="izH-NQ-Ysk"/>
+                        <outlet property="password" destination="A3Y-gb-RDy" id="jU5-nj-9V7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PIS-Vm-4Pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
