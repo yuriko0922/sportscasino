@@ -7,8 +7,11 @@
 //
 
 import UIKit
-
+import Firebase
+import FirebaseAuth
 class ViewController: UIViewController {
+    
+    
     // メールアドレスのTextField
     @IBOutlet weak var Email: UITextField!
     // パスワードのTextField
@@ -20,13 +23,18 @@ class ViewController: UIViewController {
     }
     // ログインボタン
     @IBAction func LoginButton(_ sender: Any) {
+       
     }
     // ログアウトボタン
     @IBAction func LogoutButton(_ sender: Any) {
     }
     // 新規登録ボタン
     @IBAction func SignupButton(_ sender: Any) {
-    }
+        
+       
+        }
+    
+    
     
     /*
      // MARK: - Navigation
@@ -38,4 +46,5 @@ class ViewController: UIViewController {
      }
      */
     
+
 }
